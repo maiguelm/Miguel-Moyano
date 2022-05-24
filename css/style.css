@@ -1,0 +1,658 @@
+/* font-family: 'Belgrano', serif;
+font-family: 'Black Ops One', cursive;
+font-family: 'Kaushan Script', cursive;
+font-family: 'Lilita One', cursive; */
+
+html {
+  font-size: 62.5%;
+}
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+  /* background-color: rgba(79, 8, 8, 0.936); */
+  background: linear-gradient(to right, rgba(76, 5, 5, 0.936), rgba(104, 35, 35, 0.936))
+}
+
+/*HEADER*/
+header{
+  /* background-color: rgb(79, 8, 8); */
+  display: flex;
+  flex-flow: row  nowrap;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.logoEstudio{
+  display: flex;
+}
+.barraDeNavegacion ul li {
+  padding: 20px;
+ }
+.linksDerecha{
+  list-style: none;
+  display: flex;
+  transition: .5s linear;
+}
+.linksDerecha:hover:nth-child(1){
+  margin-right: 5px;
+}
+.linksDerecha:hover:nth-child(2){
+  margin-left: 30px;
+}
+.linksDerecha:hover {
+  color: #fff;
+  text-shadow: 0 0 15px white,
+  0 0 30px white,
+  0 0 60px white;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Belgrano', serif;
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+a:hover{
+  color:darkkhaki;
+}
+
+/*INDEX*/
+
+.imagenJusticia{
+  display: inline-block;
+  width: 100%;
+}
+.tituloPosicion{
+  position:relative;
+}
+#tituloIndex{
+  text-align: center;
+  /*color: rgba(0, 0, 0, 0.807); */
+  text-decoration: underline;
+  font-size: 4rem;
+  font-family: 'Belgrano', serif;
+  font-weight: 900;
+  padding: 10px;
+  width: 600px;
+  position: absolute;
+  top: 30%;
+  left:5%;
+ }
+p{
+  font-size: 1.5rem;
+  text-align: justify;
+  font-family: 'Kaushan Script', serif;
+  color: rgb(212, 192, 192);
+}
+
+/*INDEX SEGUNDA PARTE*/
+.parteIndexDos{
+  /* background-color: rgb(79, 8, 8); */
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 30% 70%;
+  grid-template-areas: 
+  "titulo balanza"
+  "parrafo balanza";
+  align-items: center;
+}
+h2{
+  color: rgb(212, 192, 192);
+  font-family: 'Black Ops One', serif;
+  font-size: 3.5rem;
+  font-weight: 200;
+  text-decoration: underline;
+  text-align: center;
+  text-shadow: 2px 2px #000;
+  grid-area: titulo;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(40%);
+}
+.anim-typewriter{
+  animation: typewriter 2s steps(44) 1s 1 normal both,
+            blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 100%;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+.parrafoPrincipal{
+    font-size: 2.5rem;
+    text-decoration:solid;
+    line-height: 30px;
+    text-align: center;
+    padding: 75px;
+    /* display: flex; */
+    grid-area: parrafo;
+}
+#caja__imagenMDP{
+  padding: 10px;
+  grid-area: balanza;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imagenMDP{
+  width: 100%;
+}
+.segundoParrafo {
+   font-size: 2rem;
+   padding: 50px;
+   /* background-color: rgb(79, 8, 8); */
+   text-align: center;
+}
+
+ol{
+  list-style: none;
+}
+/* ESPECIALIZACION */
+.derechoLaboral, .derechoDaños,.derechoSalud, .derechoCivil{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.derechoDaños, .derechoCivil{
+  flex-direction: row-reverse;
+}
+.derechoLaboral{
+  margin-top: 20px;
+}
+.especializacion p{
+  padding: 20px;
+  font-size: 2rem;
+  text-align: center;
+  flex-basis: 60vh;
+}
+.especializacion h3{
+  text-align: center;
+  flex-basis: 60vh;
+  color: #D4C0C0;
+}
+#tituloEspecializacion{
+  padding: 20px;
+}
+
+.linksInteres{
+  display:flex;
+  justify-content: center;
+}
+.enlacesInteres{
+  font-family: 'Belgrano', serif;
+  color: rgb(219, 198, 198);
+  padding: 0 20px;
+}
+.parrafoEnlacesinteres{
+  padding: 15px 0;
+  text-decoration: underline;
+}
+
+/*  COTACTANOS  */
+main p{
+  font-size: 2rem;
+  text-decoration:solid;
+  line-height: 30px;
+  text-align: center;
+  padding: 75px;
+}
+
+
+form {
+    /* Centrar el formulario en la página */
+    margin: 0 auto;
+    width: 400px;
+    /* Esquema del formulario */
+    padding: 1em;
+    border: 2px solid black;
+    border-radius: 1em;
+  }
+
+.formulario {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  form li + li {
+    margin-top: 1.2em;
+  }
+
+  label {
+    /* Tamaño y alineación uniforme */
+    display: inline-block;
+    width: 90%;
+    text-align: center;
+    font-family: 'Lilita One', serif;
+    font-size: 1.8em;
+    }
+
+  input, textarea {
+    /* Para asegurarse de que todos los campos de texto tienen la misma configuración de letra
+       Por defecto, las áreas de texto tienen un tipo de letra monoespaciada */
+    font: 1.2em sans-serif;
+
+    /* Tamaño uniforme del campo de texto */
+    width: 100%;
+    box-sizing: border-box;
+
+    /* Hacer coincidir los bordes del campo del formulario */
+    border: 1px solid #999;
+  }
+
+  input:focus, textarea:focus {
+    /* Destacado adicional para elementos que tienen el cursor */
+    border-color: #000;
+  }
+
+  textarea {
+    resize: none;
+    /* Alinear los campos de texto multilínea con sus etiquetas */
+    vertical-align: top;
+
+    /* Proporcionar espacio para escribir texto */
+    height: 15em;
+  }
+ 
+  button {
+    /* Este margen adicional representa aproximadamente el mismo espacio que el espacio
+       entre las etiquetas y sus campos de texto */
+    width: 100%;
+    margin: 0 auto;
+  }
+  button:hover{
+    background-color: #000;
+    color: #fff;
+  }
+  button:focus{
+    background-color: rgb(110, 68, 68);
+    color: rgb(185, 160, 160);
+  }
+
+  /*TABLA*/
+table{
+  padding: 30px;
+  border-collapse: collapse;
+  font-family: 'Belgrano', serif;
+  font-size: 1.5rem;
+  color: rgb(250, 235, 215);
+  background-image: linear-gradient(to right, rgba(154, 12, 12, 0.936), rgba(107, 9, 9, 0.936));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+th{
+  padding: 10px;
+  border: 1px solid black;
+}
+tr{
+  padding: 10px;
+  border: 1px solid black;
+}
+td{
+  padding: 10px;
+  border: 1px solid black
+}
+caption{
+  padding: 10px;
+  font-family: 'Belgrano', serif;
+  font-size: 2em;
+  font-weight: 400;
+  text-decoration: double underline;
+}
+.aclaracionTabla{
+  color: rgb(250, 235, 215);
+  font-size: 1rem;
+  margin-left: 15px;
+}
+
+/* FOOTER*/
+.fa-whatsapp-square{
+  font-size: 50px;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  color: rgb(48, 204, 48);
+}
+footer{
+  padding: 15px;
+}
+.iframeMapa{
+  margin-left: 15px;
+  display:flex;
+  justify-content: center;
+  width: 300px;
+  height: 225px;
+ }
+#footerIndex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.fraseFooter{
+  margin-left: 15px;
+  display: flex;
+  align-items: flex-start;
+}
+.linkFooter{
+  color: black;
+  margin-left: 25px;
+  padding: 5px;
+}
+.datosFooter{
+  font-family: 'Literata', serif;
+  font-size: 1.5rem;
+  margin-right: 15px;
+  display: flex;
+  justify-content: flex-end;
+}
+.listaFooter{
+  list-style: none;
+}
+.fa-location-dot, .fa-phone, .fa-envelope{
+  margin-right: 20px;
+}
+.fa-registered{
+  padding: 5px;
+}
+
+/*QUIENES SOMOS*/
+.descripcionQuienesSomos{
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.descripcionQuienesSomos h2{
+  padding: 25px;
+}
+.descripcionQuienesSomos p{
+  font-size: 2.5rem;
+}
+.pablito{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 25% 75%;
+  grid-template-areas: 
+  "tituloPablo fotoPablo"
+  "parrafoPablo fotoPablo";
+  justify-items: center;
+}
+.fotoPablo{
+  padding: 30px;
+  grid-area: fotoPablo;
+}
+h3{
+  font-family: 'Lilita One', serif;
+  font-weight: 600;
+  font-size: 3rem;
+  text-decoration: double underline;
+  text-align: center;
+  padding: 25px;
+}
+.tituloPablo{
+  grid-area: titulo;
+}
+.descripcionPablo{
+  grid-area: parrafoPablo;
+}
+.migue{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 25% 75%;
+  grid-template-areas: 
+  "fotoMigue titulo"
+  "fotoMigue parrafoMigue";
+  justify-items: center;
+}
+.fotoMigue{
+  grid-area: fotoMigue;
+  padding: 30px;
+}
+.divMigue, .descripcionMigue, .divPablito, .descripcionPablo{
+  /* background-color: #880e4f; */
+  background-image: linear-gradient(to right, #290d0d, #b03232);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.divMigue, .descripcionMigue{
+  background-image: linear-gradient(to left, #290d0d, #b03232);
+}
+.tituloMigue{
+  grid-area: titulo;
+}
+.descripcionMigue{
+  grid-area: parrafoMigue;
+ }
+.parrafoQuienesSomos{
+   text-align: center;
+   font-size: 2rem;
+ }
+
+ /*SERVICIOS*/
+ .serviciosUno, .serviciosDos{
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+ }
+ #hammerScreen, .screenHammer{
+   width: 20%;
+ }
+ .descripcionServicios{
+   padding: 20px;
+   font-size: 2rem;
+   text-align: center;
+ }
+
+ /*CLIENTES*/
+.parrafoClientes{
+  font-size: 2rem;
+  text-align: center;
+  padding: 20px;
+}
+.galeriaClientes{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  grid-auto-flow: dense;
+  grid-gap: 10px;
+ }
+.galeriaClientes img{
+  filter: drop-shadow(2px 2px #000);
+}
+
+
+@media only screen and (max-width: 950px){
+  header{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .logoEstudio{
+    width: 150px;
+    height: 127px;    
+    /* margin: 0 auto; */
+  }
+  .barraDeNavegacion{
+    text-align: center; 
+    /* margin: 0 auto; */
+  } 
+  a{
+    font-size: 1.1rem;
+  }
+  .tituloPosicion{
+    display:inline-block;
+  }
+  #tituloIndex{
+    font-size: 2rem;
+    width: 300px;
+  }
+  .iframeMapa{
+    width: 150px;
+    height: 112px;
+   }
+   #footerIndex{
+     display: flex;
+     flex-direction: column;
+   }
+   .datosFooter, .fraseFooter, .linkFooter{
+     padding: 5px;
+     font-size: 1rem;
+   }
+   .fa-whatsapp-square{
+    font-size: 30px;
+   } 
+   .parteIndexDos{
+     display: flex;
+     flex-direction: column;
+   }
+   h2{
+     padding: 25px;
+     font-size: 2.5rem;    
+  }
+  .parrafoPrincipal, .descripcionServicios{
+      font-size: 1.5rem;
+  }
+  .descripcionQuienesSomos p{
+    font-size: 2rem;
+    text-align: center;
+  }
+  .parrafoQuienesSomos, .tituloMigue, .tituloPablo{
+    font-size: 1.7rem;
+    padding: 17px;
+  }
+  .pablito, .migue{
+    display: flex;
+    flex-direction: column;
+  }
+  .fotoMigue, .fotoPablo{
+    margin: 0 auto;
+  }
+  table, caption{
+    font-size: 1rem;
+  }
+  .galeriaClientes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+   }
+   .galeriaClientes img{
+     width: 50%;
+   }
+   .especializacion p{
+    font-size: 1.5rem;
+   }
+  .especializacion h3{
+    font-size: 2rem;
+  }
+  main p{
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  body{
+    /* background-color: rgba(79, 8, 8, 0.936); */
+    background-image: linear-gradient(to bottom, rgba(76, 5, 5, 0.936), rgba(106, 44, 44, 0.936))
+  }
+  header{
+    display: flex;
+    flex-direction: column;
+  }
+  .logoEstudio{
+    width: 100px;
+    height: 85px;    
+    margin: 0 auto;
+  }
+  .linksDerecha{
+    display: flex;
+    flex-direction: column;
+  }
+  .barraDeNavegacion ul li {
+    padding: 5px;
+  }
+  .tituloPosicion{
+    display: flex;
+    flex-direction: column;
+  }
+  #tituloIndex{
+    font-weight: 800;
+    color:rgb(237, 223, 223);
+    width: 300px;
+    position:relative;
+    margin: 0 auto;
+    left: 0;
+  }
+  h2{
+    padding: 15px;
+    font-size: 1.8rem;
+    text-decoration: none;
+  }
+  .segundoParrafo{
+    font-size: 1.5rem;
+  }  
+  h3.tituloPablo, h3.tituloMigue, .descripcionQuienesSomos p{
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .parrafoQuienesSomos{
+    font-size: 1.5rem;
+    padding: 17px;
+  }
+  .fotoPablo, .fotoMigue{
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    }
+  .fotito{
+    height:143px;
+    width: 114px;
+  }
+  .fotitodos{
+    height:143px;
+    width: 83px;
+  }
+  .serviciosUno {
+    display: flex;
+    flex-direction: column;
+  }
+  .serviciosDos{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #hammerScreen, .screenHammer{
+      width: 40%;
+    }
+  .galeriaClientes{
+      display: flex;
+      flex-direction: column;
+     }
+  .galeriaClientes img{
+    padding: 10px;
+     }
+  .argento, .bajoCero{
+    height: 70%;
+  }
+  .derechoLaboral, .derechoDaños,.derechoSalud, .derechoCivil{
+    flex-direction: column;
+  }
+  .linksInteres{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
