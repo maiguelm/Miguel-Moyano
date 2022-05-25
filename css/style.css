@@ -107,8 +107,8 @@ h2{
   text-align: center;
   text-shadow: 2px 2px #000;
   grid-area: titulo;
-  white-space: nowrap;
   overflow: hidden;
+  white-space: nowrap;
   transform: translateY(40%);
 }
 .anim-typewriter{
