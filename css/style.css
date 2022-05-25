@@ -120,7 +120,7 @@ h2{
   to{width: 100%;}
 }
 @keyframes blinkTextCursor{
-  from{border-right-color: rgba(255,255,255,.75);}
+  from{border-right-color: rgba(255,255,255,.70);}
   to{border-right-color: transparent;}
 }
 
