@@ -388,6 +388,24 @@ footer{
 .fotoPablo{
   padding: 30px;
   grid-area: fotoPablo;
+  overflow: hidden;
+	box-shadow: 0 5px 15px 0px rgba(22, 22, 22, 0.6);
+	transform: translatey(0px);
+	animation: float 5s ease-in-out infinite;
+}
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0);
+		transform: translatey(-50px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
 }
 h3{
   font-family: 'Lilita One', serif;
@@ -415,6 +433,8 @@ h3{
 .fotoMigue{
   grid-area: fotoMigue;
   padding: 30px;
+  transform: translatey(0px);
+	animation: float 5s ease-in-out infinite;
 }
 .divMigue, .descripcionMigue, .divPablito, .descripcionPablo{
   /* background-color: #880e4f; */
@@ -444,7 +464,7 @@ h3{
    align-items: center;
    justify-content: space-around;
  }
- #hammerScreen, .screenHammer{
+  #hammerScreen, .screenHammer{
    width: 20%;
  }
  .descripcionServicios{
@@ -452,6 +472,19 @@ h3{
    font-size: 2rem;
    text-align: center;
  }
+ .serviciosUno p, .serviciosDos p{
+   border: 5px solid #111010;
+   box-shadow: 0 5px 10px rgb(38, 39, 41);
+}
+.serviciosTres{
+  margin-left: 25px;
+  margin-right: 25px;
+}
+.serviciosTres p{
+  margin-top: 20px;
+  border: 5px solid #111010;
+  box-shadow: 0 5px 10px rgb(38, 39, 41);
+}
 
  /*CLIENTES*/
 .parrafoClientes{
@@ -501,6 +534,7 @@ h3{
   .iframeMapa{
     width: 150px;
     height: 112px;
+    margin: 0;
    }
    #footerIndex{
      display: flex;
@@ -509,6 +543,7 @@ h3{
    .datosFooter, .fraseFooter, .linkFooter{
      padding: 5px;
      font-size: 1rem;
+     margin: 0;
    }
    .fa-whatsapp-square{
     font-size: 30px;
@@ -538,6 +573,7 @@ h3{
   }
   .fotoMigue, .fotoPablo{
     margin: 0 auto;
+    animation: none;
   }
   table, caption{
     font-size: 1rem;
