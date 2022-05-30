@@ -57,6 +57,9 @@ a{
 a:hover{
   color:darkkhaki;
 }
+.nav__colapsado{
+  display: none !important;
+}
 
 /*INDEX*/
 
@@ -202,29 +205,14 @@ main p{
   text-align: center;
   padding: 75px;
 }
-
-
 form {
-    /* Centrar el formulario en la página */
     margin: 0 auto;
     width: 400px;
-    /* Esquema del formulario */
     padding: 1em;
     border: 2px solid black;
     border-radius: 1em;
   }
-
-.formulario {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  form li + li {
-    margin-top: 1.2em;
-  }
-
-  label {
+label {
     /* Tamaño y alineación uniforme */
     display: inline-block;
     width: 90%;
@@ -234,37 +222,16 @@ form {
     }
 
   input, textarea {
-    /* Para asegurarse de que todos los campos de texto tienen la misma configuración de letra
-       Por defecto, las áreas de texto tienen un tipo de letra monoespaciada */
-    font: 1.2em sans-serif;
-
-    /* Tamaño uniforme del campo de texto */
+    font: 1.8em sans-serif !important;
     width: 100%;
     box-sizing: border-box;
-
-    /* Hacer coincidir los bordes del campo del formulario */
     border: 1px solid #999;
   }
-
-  input:focus, textarea:focus {
-    /* Destacado adicional para elementos que tienen el cursor */
-    border-color: #000;
-  }
-
-  textarea {
-    resize: none;
-    /* Alinear los campos de texto multilínea con sus etiquetas */
-    vertical-align: top;
-
-    /* Proporcionar espacio para escribir texto */
-    height: 15em;
-  }
- 
   button {
-    /* Este margen adicional representa aproximadamente el mismo espacio que el espacio
-       entre las etiquetas y sus campos de texto */
-    width: 100%;
-    margin: 0 auto;
+  width: 100%;
+  margin: 0 auto;
+  font-family: 'Lilita One', serif;
+  font-size: 1.5em;
   }
   button:hover{
     background-color: #000;
@@ -324,7 +291,7 @@ footer{
   padding: 15px;
 }
 .iframeMapa{
-  margin-left: 15px;
+  margin-left: 100px;
   display:flex;
   justify-content: center;
   width: 300px;
@@ -367,14 +334,15 @@ footer{
   padding: 30px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center;
+  justify-content: center; */
 }
 .descripcionQuienesSomos h2{
   padding: 25px;
 }
 .descripcionQuienesSomos p{
   font-size: 2.5rem;
+  padding: 50px;
 }
 .pablito{
   display: grid;
@@ -459,6 +427,9 @@ h3{
  }
 
  /*SERVICIOS*/
+ .tituloServicios{
+   margin-bottom: 20px;
+ }
  .serviciosUno, .serviciosDos{
    display: flex;
    align-items: center;
@@ -492,7 +463,7 @@ h3{
   text-align: center;
   padding: 20px;
 }
-.galeriaClientes{
+/* .galeriaClientes{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -500,9 +471,19 @@ h3{
   align-items: center;
   grid-auto-flow: dense;
   grid-gap: 10px;
- }
-.galeriaClientes img{
+ }*/
+.galeriaClientes{
+  margin: 0 auto;
   filter: drop-shadow(2px 2px #000);
+} 
+.galeria__posicion{
+  display: flex;
+  justify-content: center;
+}
+.carousel__fotos {
+  transition: transform .8s ease-out;
+  width:85%;
+  margin-right: -60%;
 }
 
 
@@ -531,10 +512,13 @@ h3{
     font-size: 2rem;
     width: 300px;
   }
+  .parrafo__maxwidht{
+    display: flex;
+  }
   .iframeMapa{
     width: 150px;
     height: 112px;
-    margin: 0;
+    margin: 0 auto;
    }
    #footerIndex{
      display: flex;
@@ -543,7 +527,7 @@ h3{
    .datosFooter, .fraseFooter, .linkFooter{
      padding: 5px;
      font-size: 1rem;
-     margin: 0;
+     margin: 0 auto;
    }
    .fa-whatsapp-square{
     font-size: 30px;
@@ -554,14 +538,17 @@ h3{
    }
    h2{
      padding: 25px;
-     font-size: 2.5rem;    
+     font-size: 2rem;    
   }
-  .parrafoPrincipal, .descripcionServicios{
-      font-size: 1.5rem;
+  .parrafoPrincipal{
+      font-size: 2rem;
+  }
+  .descripcionServicios{
+    font-size: 1.5rem;
   }
   .descripcionQuienesSomos p{
     font-size: 2rem;
-    text-align: center;
+    padding: 25px;
   }
   .parrafoQuienesSomos, .tituloMigue, .tituloPablo{
     font-size: 1.7rem;
@@ -595,6 +582,12 @@ h3{
   }
   main p{
     font-size: 1.4rem;
+  }
+  form{
+    width: 250px;
+  }
+  label, input, textarea{
+    font-size: 1.4em !important;
   }
 }
 
@@ -637,7 +630,7 @@ h3{
     text-decoration: none;
   }
   .segundoParrafo{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }  
   h3.tituloPablo, h3.tituloMigue, .descripcionQuienesSomos p{
     text-align: center;
@@ -657,10 +650,14 @@ h3{
   .fotito{
     height:143px;
     width: 114px;
+    padding: 0;
+    border: none;
   }
   .fotitodos{
     height:143px;
     width: 83px;
+    border: none;
+    padding: 0;
   }
   .serviciosUno {
     display: flex;
