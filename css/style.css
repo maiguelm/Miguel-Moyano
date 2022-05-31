@@ -479,11 +479,10 @@ h3{
 .galeria__posicion{
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .carousel__fotos {
-  transition: transform .8s ease-out;
-  width:85%;
-  margin-right: -60%;
+  transition: transform .8s cubic-bezier(0, 0.98, 1, 1);
 }
 
 
@@ -565,12 +564,12 @@ h3{
   table, caption{
     font-size: 1rem;
   }
-  .galeriaClientes{
+  /* .galeriaClientes{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-gap: 5px;
-   }
+   } */
    .galeriaClientes img{
      width: 50%;
    }
