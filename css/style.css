@@ -12,13 +12,11 @@ html {
   margin: 0;
 }
 body{
-  /* background-color: rgba(79, 8, 8, 0.936); */
   background: linear-gradient(to right, rgba(76, 5, 5, 0.936), rgba(104, 35, 35, 0.936))
 }
 
 /*HEADER*/
 header{
-  /* background-color: rgb(79, 8, 8); */
   display: flex;
   flex-flow: row  nowrap;
   justify-content: space-between;
@@ -72,7 +70,6 @@ a:hover{
 }
 #tituloIndex{
   text-align: center;
-  /*color: rgba(0, 0, 0, 0.807); */
   text-decoration: underline;
   font-size: 4rem;
   font-family: 'Belgrano', serif;
@@ -92,7 +89,6 @@ p{
 
 /*INDEX SEGUNDA PARTE*/
 .parteIndexDos{
-  /* background-color: rgb(79, 8, 8); */
   display: grid;
   grid-template-columns: 70% 30%;
   grid-template-rows: 30% 70%;
@@ -149,7 +145,6 @@ h2{
 .segundoParrafo {
    font-size: 2rem;
    padding: 50px;
-   /* background-color: rgb(79, 8, 8); */
    text-align: center;
 }
 
@@ -213,7 +208,6 @@ form {
     border-radius: 1em;
   }
 label {
-    /* Tamaño y alineación uniforme */
     display: inline-block;
     width: 90%;
     text-align: center;
@@ -334,8 +328,6 @@ footer{
   padding: 30px;
   display: flex;
   flex-direction: column;
-  /* align-items: center;
-  justify-content: center; */
 }
 .descripcionQuienesSomos h2{
   padding: 25px;
@@ -405,7 +397,6 @@ h3{
 	animation: float 5s ease-in-out infinite;
 }
 .divMigue, .descripcionMigue, .divPablito, .descripcionPablo{
-  /* background-color: #880e4f; */
   background-image: linear-gradient(to right, #290d0d, #b03232);
   width: 100%;
   display: flex;
@@ -463,15 +454,6 @@ h3{
   text-align: center;
   padding: 20px;
 }
-/* .galeriaClientes{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  justify-items: center;
-  align-items: center;
-  grid-auto-flow: dense;
-  grid-gap: 10px;
- }*/
 .galeriaClientes{
   margin: 0 auto;
   filter: drop-shadow(2px 2px #000);
@@ -495,11 +477,9 @@ h3{
   .logoEstudio{
     width: 150px;
     height: 127px;    
-    /* margin: 0 auto; */
   }
   .barraDeNavegacion{
     text-align: center; 
-    /* margin: 0 auto; */
   } 
   a{
     font-size: 1.1rem;
@@ -564,12 +544,6 @@ h3{
   table, caption{
     font-size: 1rem;
   }
-  /* .galeriaClientes{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-gap: 5px;
-   } */
    .galeriaClientes img{
      width: 50%;
    }
