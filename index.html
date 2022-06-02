@@ -8,7 +8,9 @@
     <link rel="shortcut icon" href="../images/favicon.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Belgrano&family=Black+Ops+One&family=Kaushan+Script&family=Lilita+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belgrano&family=Black+Ops+One&family=Kaushan+Script&family=Lexend+Peta:wght@300;400;500;800&family=Lilita+One&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
@@ -40,13 +42,40 @@
         <section class="container-fluid parteIndexDos row">
             <h2 class="anim-typewriter">Estudio de Abogados en Mar del Plata</h2>
             <p class="parrafoPrincipal">Somos un equipo de Abogados con más de 10 años de ejercicio profesional en el ámbito de la ciudad de Mar del Plata y la zona.</p> 
-            <div id="caja__imagenMDP">
-                <img class="imagenMDP" src="./images/mardelplata.jpg" alt="Imagen Mar del Plata">
-            </div>        
+           <div id="carouselExampleControls" class="carousel slide galeria__posicion" data-bs-ride="carousel">
+                <div>
+                    <div class="carousel-item active carousel__fotos">
+                       <img src="./images/mardelplata.jpg" class="d-block galeriaClientes" alt="...">
+                    </div>
+                    <div class="carousel-item carousel__fotos">
+                        <img src="./images/mardelplatados.jpg" class="d-block galeriaClientes" alt="...">
+                    </div>
+                    <div class="carousel-item carousel__fotos">
+                        <img src="./images/mardelplatatres.jpg" class="d-block galeriaClientes" alt="...">
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            
+
         </section>       
-        <section class="row parrafo__maxwidht">
-            <p class="segundoParrafo col-lg-8">Estamos enfocados en brindarle una atención de exclencia, fijándonos como objetivo dar asesoramiento objetivo y franco, y obtener la pronta solución de todos los conflictos que afectan a nuestros clientes.</p>
-            <p class="segundoParrafo col-lg-4">Nuestro horario de atencion presencial es de Lunes a Jueves de 10 a 16 hs., pudiendo Ud. comunicarse con nosotros mediante los canales telefónicos o virtuales en un horario extendido de 9 a 19hs.</p>
+        <section class="row parrafo__color">            
+            <div class="col-lg-8">
+                <div class="text-center">
+                <p class="segundoParrafo">Estamos enfocados en brindarle una atención de exclencia, fijándonos como objetivo dar asesoramiento objetivo y franco, y obtener la pronta solución de todos los conflictos que afectan a nuestros clientes.</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <p class="segundoParrafo">Nuestro horario de atencion presencial es de Lunes a Jueves de 10 a 16 hs., pudiendo Ud. comunicarse con nosotros mediante los canales telefónicos o virtuales en un horario extendido de 9 a 19hs.</p>
+            </div>
+            
         </section>
     </main>
 
