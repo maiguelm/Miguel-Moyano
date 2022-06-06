@@ -67,6 +67,7 @@ a:hover{
 .imagenJusticia{
   display: inline-block;
   width: 100%;
+  background-attachment: fixed;
 }
 .tituloPosicion{
   position:relative;
@@ -103,15 +104,20 @@ p{
   align-items: center;
 }
 h2{
-  color: rgb(10, 9, 9);
+  color: rgb(212, 192, 192);
   font-family: 'Lexend Peta', sans-serif;;
   font-size: 3.0rem;
   font-weight: 500;
   text-decoration: underline;
   text-align: center;
-  text-shadow: 2px 2px rgb(212, 154, 154);
+  text-shadow: 1px 1px rgb(212, 154, 154);
+  padding: 25px;
   width: auto;
   grid-area: titulo;
+}
+.tituloEstudio{
+  color: rgb(10, 9, 9);
+  text-shadow: 2px 2px rgb(212, 154, 154);
 }
 .anim-typewriter{
 overflow: hidden; 
@@ -129,16 +135,16 @@ to { width: 100% }
 
 .parrafoPrincipal{
   color: rgb(10, 9, 9);
-    font-size: 2.5rem;
-    text-decoration:solid;
-    line-height: 30px;
-    text-align: center;
-    padding: 75px;
+  font-size: 2.5rem;
+  text-decoration:solid;
+  line-height: 30px;
+  text-align: center;
+  padding: 75px;
 }
 .segundoParrafo {
-   font-size: 2rem;
-   padding: 50px;
-   text-align: center;
+  font-size: 2rem;
+  padding: 50px;
+  text-align: center;
 }
 .parrafo__color{
   padding: 2vh;
@@ -167,7 +173,7 @@ ol{
 .especializacion h3{
   text-align: center;
   flex-basis: 60vh;
-  color: #D4C0C0;
+  color: rgb(212, 192, 192);
 }
 #tituloEspecializacion{
   padding: 20px;
@@ -179,7 +185,7 @@ ol{
 }
 .enlacesInteres{
   font-family: 'Belgrano', serif;
-  color: rgb(219, 198, 198);
+  color: rgb(212, 192, 192);
   padding: 0 20px;
 }
 .parrafoEnlacesinteres{
@@ -240,7 +246,7 @@ table{
   border-collapse: collapse;
   font-family: 'Belgrano', serif;
   font-size: 1.5rem;
-  color: rgb(250, 235, 215);
+  color: rgb(212, 192, 192);
   background-image: linear-gradient(to right, rgba(154, 12, 12, 0.936), rgba(107, 9, 9, 0.936));
   display: flex;
   flex-direction: column;
@@ -307,7 +313,9 @@ footer{
   padding: 5px;
 }
 .datosFooter{
-  font-family: 'Literata', serif;
+  font-family: 'Lexend Peta', sans-serif;
+  color:rgb(212, 192, 192);
+  letter-spacing: -.2rem;
   font-size: 1.5rem;
   margin-right: 15px;
   display: flex;
@@ -328,9 +336,6 @@ footer{
   padding: 30px;
   display: flex;
   flex-direction: column;
-}
-.descripcionQuienesSomos h2{
-  padding: 25px;
 }
 .descripcionQuienesSomos p{
   font-size: 2.5rem;
