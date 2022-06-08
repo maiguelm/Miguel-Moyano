@@ -1,0 +1,89 @@
+.tituloServicios{
+    margin-bottom: 20px;
+    
+}
+.serviciosUno, .serviciosDos{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    #hammerScreen, .screenHammer{
+        width: 20%;
+        @media only screen and (max-widht: 480px) {
+            width: 40%;
+        }
+    }
+    p{
+        border: 5px solid #111010;
+        box-shadow: 0 5px 10px rgb(38, 39, 41);
+    }
+}
+.serviciosUno {
+    @media only screen and (max-widht: 480px){
+        display: flex;
+        flex-direction: column;
+    }
+  }
+  .serviciosDos{
+    @media only screen and (max-widht: 480px){
+        display: flex;
+        flex-direction: column-reverse;
+    }
+  }
+.serviciosTres{
+   margin-left: 25px;
+   margin-right: 25px;
+   p{
+    margin-top: 20px;
+    border: 5px solid #111010;
+    box-shadow: 0 5px 10px rgb(38, 39, 41);
+   }
+   .descripcionServicios{
+    padding: 20px;
+    font-size: 2rem;
+    text-align: center;
+    @media only screen and (max-widht: 950px) {
+        font-size: 1.5rem;
+    }
+   }
+}
+.tabla{
+    padding: 30px;
+    border-collapse: collapse;
+    font-family: $font-four;
+    font-size: 1.5rem;
+    color: $txt-index;
+    background-image: $bg-index;
+    @extend %dpflex;
+    flex-direction: column;
+    @media only screen and (max-widht: 950px) {
+        font-size: 1rem;
+    }
+    caption{
+        color: $txt-index;
+        letter-spacing: 2px;
+        padding: 10px;
+        font-weight: 600;
+        @include titulos($font-four, $underline, $align-center, 'false');
+        @media only screen and (max-widht: 950px) {
+            font-size: 1rem;
+        }
+    }
+    th{
+        padding: 10px;
+        border: 1px solid black;
+    }
+    tr{
+        padding: 10px;
+        border: 1px solid black;
+    }
+    td{
+        padding: 10px;
+        border: 1px solid black
+    }
+}
+
+.aclaracionTabla{
+    color:$txtcl;
+    font-size: 1rem;
+    margin-left: 15px;
+}

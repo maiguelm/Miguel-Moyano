@@ -1,675 +1,605 @@
-/* font-family: 'Belgrano', serif;
-font-family: 'Lexend Peta', sans-serif;
-font-family: 'Black Ops One', cursive;
-font-family: 'Kaushan Script', cursive;
-font-family: 'Lilita One', cursive; */
+@charset "UTF-8";
+.galeria__posicion, .linksInteres, .tabla, .divMigue, .descripcionMigue, .divPablito, .descripcionPablo {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 html {
-  font-size: 62.5%;
-}
-*{
+  font-size: 62.5%; }
+
+* {
   box-sizing: border-box;
   padding: 0;
-  margin: 0;
-}
-body{
-  /* background: linear-gradient(to right, rgba(240, 233, 233, 0.936), rgba(179, 215, 215, 0.936)); */
-  background: linear-gradient(to right, rgba(76, 5, 5, 0.936), rgba(104, 35, 35, 0.936));
-}
+  margin: 0; }
 
-/*HEADER*/
-header{
-  /* background: linear-gradient(to right, rgba(76, 5, 5, 0.936), rgba(104, 35, 35, 0.936)); */
+body {
+  background: linear-gradient(to right, rgba(76, 5, 5, 0.936), rgba(104, 35, 35, 0.936)); }
+
+header {
   display: flex;
   flex-flow: row  nowrap;
   justify-content: space-between;
-  align-items: flex-end;
-}
-.logoEstudio{
-  display: flex;
-}
+  align-items: flex-end; }
+  @media only screen and (max-width: 950px) {
+    header {
+      flex-direction: column-reverse;
+      align-items: center; } }
+  @media only screen and (max-width: 480px) {
+    header {
+      flex-direction: column;
+      align-items: center; } }
+
+@media only screen and (max-width: 950px) {
+  .logoEstudio {
+    width: 100px;
+    height: 85px; } }
+
+@media only screen and (max-width: 480px) {
+  .logoEstudio {
+    width: 100px;
+    height: 85px;
+    margin: 0 auto; } }
+
 .barraDeNavegacion ul li {
-  padding: 20px;
- }
-.linksDerecha{
+  padding: 20px; }
+  @media only screen and (max-width: 480px) {
+    .barraDeNavegacion ul li {
+      padding: 5px; } }
+
+@media only screen and (max-width: 950px) {
+  .barraDeNavegacion {
+    text-align: center; } }
+
+.linksDerecha {
   list-style: none;
   display: flex;
-  transition: .5s linear;
-}
-.linksDerecha:hover:nth-child(1){
-  margin-right: 5px;
-}
-.linksDerecha:hover:nth-child(2){
-  margin-left: 30px;
-}
-.linksDerecha:hover {
-  color: #fff;
-  text-shadow: 0 0 15px white,
-  0 0 30px white,
-  0 0 60px white;
-}
-a{
-  text-decoration: none;
-  color: #fff;
-  font-family: 'Lexend Peta', serif;
-  font-size: 1.6rem;
-  font-weight: 300;
-}
-a:hover{
-  color:darkkhaki;
-}
-.nav__colapsado{
-  display: none !important;
-}
-
-/*INDEX*/
-
-.imagenJusticia{
-  display: inline-block;
-  width: 100%;
-  background-attachment: fixed;
-}
-.tituloPosicion{
-  position:relative;
-}
-#tituloIndex{
-  text-align: center;
-  text-decoration: underline;
-  font-size: 4rem;
-  font-family: 'Lexend Peta', sans-serif;;
-  font-weight: 900;
-  padding: 10px;
-  width: 600px;
-  position: absolute;
-  top: 30%;
-  left:5%;
- }
-p{
-  font-size: 1.5rem;
-  text-align: justify;
-  font-family: 'Kaushan Script', serif;
-  color: rgb(212, 192, 192);
-}
-
-/*INDEX SEGUNDA PARTE*/
-.parteIndexDos{
-  padding: 7% 1.3rem 5% 1.3rem;
-  background: linear-gradient(to right, rgba(240, 233, 233, 0.936), rgba(179, 215, 215, 0.936));
-  /* display: grid;
-  grid-template-columns: 70% 30%;
-  grid-template-rows: 30% 70%;
-  grid-template-areas: 
-  "titulo balanza"
-  "parrafo balanza"; */
-  align-items: center;
-}
-h2{
-  color: rgb(212, 192, 192);
-  font-family: 'Lexend Peta', sans-serif;;
-  font-size: 3.0rem;
-  font-weight: 500;
-  text-decoration: underline;
-  text-align: center;
-  text-shadow: 1px 1px rgb(212, 154, 154);
-  padding: 25px;
-  width: auto;
-  grid-area: titulo;
-}
-.tituloEstudio{
-  color: rgb(10, 9, 9);
-  text-shadow: 2px 2px rgb(212, 154, 154);
-}
-.anim-typewriter{
-overflow: hidden; 
-white-space: nowrap; 
-margin: 0 auto; 
-letter-spacing: .15em; 
-animation: 
-  typing 3.5s steps(30, end),
-  blink-caret .5s step-end infinite;
-}
-@keyframes typing {
-from { width: 0 }
-to { width: 100% }
-}
-
-.parrafoPrincipal{
-  color: rgb(10, 9, 9);
-  font-size: 2.5rem;
-  text-decoration:solid;
-  line-height: 30px;
-  text-align: center;
-  padding: 75px;
-}
-.segundoParrafo {
-  font-size: 2rem;
-  padding: 50px;
-  text-align: center;
-}
-.parrafo__color{
-  padding: 2vh;
-}
-ol{
-  list-style: none;
-}
-/* ESPECIALIZACION */
-.derechoLaboral, .derechoDaños,.derechoSalud, .derechoCivil{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-.derechoDaños, .derechoCivil{
-  flex-direction: row-reverse;
-}
-.derechoLaboral{
-  margin-top: 20px;
-}
-.especializacion p{
-  padding: 20px;
-  font-size: 2rem;
-  text-align: center;
-  flex-basis: 60vh;
-}
-.especializacion h3{
-  text-align: center;
-  flex-basis: 60vh;
-  color: rgb(212, 192, 192);
-}
-#tituloEspecializacion{
-  padding: 20px;
-}
-
-.linksInteres{
-  display:flex;
-  justify-content: center;
-}
-.enlacesInteres{
-  font-family: 'Belgrano', serif;
-  color: rgb(212, 192, 192);
-  padding: 0 20px;
-}
-.parrafoEnlacesinteres{
-  padding: 15px 0;
-  text-decoration: underline;
-}
-
-/*  COTACTANOS  */
-main p{
-  font-size: 2rem;
-  text-decoration:solid;
-  line-height: 30px;
-  text-align: center;
-  padding: 75px;
-}
-form {
-    margin: 0 auto;
-    width: 400px;
-    padding: 1em;
-    border: 2px solid black;
-    border-radius: 1em;
-  }
-label {
-    display: inline-block;
-    width: 90%;
-    text-align: center;
-    font-family: 'Lilita One', serif;
-    font-size: 1.8em;
-    }
-
-  input, textarea {
-    font: 1.8em sans-serif !important;
-    width: 100%;
-    box-sizing: border-box;
-    border: 1px solid #999;
-  }
-  button {
-  width: 100%;
-  margin: 0 auto;
-  font-family: 'Lilita One', serif;
-  font-size: 1.5em;
-  }
-  button:hover{
-    background-color: #000;
+  transition: .5s linear; }
+  .linksDerecha:hover {
     color: #fff;
-  }
-  button:focus{
-    background-color: rgb(110, 68, 68);
-    color: rgb(185, 160, 160);
-  }
-  form li{
-    list-style: none;
-  }
+    text-shadow: 0 0 15px white, 0 0 30px white, 0 0 60px white; }
+  .linksDerecha:hover:nth-child(1) {
+    margin-right: 5px; }
+  .linksDerecha:hover:nth-child(2) {
+    margin-right: 30px; }
+  .linksDerecha a {
+    text-decoration: none;
+    color: #fff;
+    font-family: "Lexend Peta", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 300; }
+    .linksDerecha a:hover {
+      color: darkkhaki; }
+  @media only screen and (max-width: 480px) {
+    .linksDerecha {
+      flex-direction: column; } }
 
-  /*TABLA*/
-table{
-  padding: 30px;
-  border-collapse: collapse;
-  font-family: 'Belgrano', serif;
-  font-size: 1.5rem;
-  color: rgb(212, 192, 192);
-  background-image: linear-gradient(to right, rgba(154, 12, 12, 0.936), rgba(107, 9, 9, 0.936));
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-th{
-  padding: 10px;
-  border: 1px solid black;
-}
-tr{
-  padding: 10px;
-  border: 1px solid black;
-}
-td{
-  padding: 10px;
-  border: 1px solid black
-}
-caption{
-  padding: 10px;
-  font-family: 'Belgrano', serif;
-  font-size: 2em;
-  font-weight: 400;
-  text-decoration: double underline;
-}
-.aclaracionTabla{
-  color: rgb(250, 235, 215);
-  font-size: 1rem;
-  margin-left: 15px;
-}
-
-/* FOOTER*/
-.fa-whatsapp-square{
+.fa-whatsapp-square {
   font-size: 50px;
   position: fixed;
   right: 10px;
   bottom: 10px;
-  color: rgb(48, 204, 48);
-}
-footer{
-  /* background: linear-gradient(to right, rgba(240, 233, 233, 0.936), rgba(179, 215, 215, 0.936)); */
-    /* background: linear-gradient(to right, rgba(76, 5, 5, 0.936), rgba(104, 35, 35, 0.936)); */
-  padding: 15px;
-}
-.iframeMapa{
-  margin-left: 100px;
-  display:flex;
-  justify-content: center;
-  width: 300px;
-  height: 225px;
- }
-#footerIndex{
+  color: #30cc30; }
+  @media only screen and (max-width: 950px) {
+    .fa-whatsapp-square {
+      font-size: 30px; } }
+
+footer {
+  padding: 15px; }
+  footer .fraseFooter {
+    margin-left: 15px;
+    display: flex;
+    align-items: flex-start; }
+  footer .fa-registered {
+    padding: 5px; }
+  footer .iframeMapa {
+    margin-left: 100px;
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 225px; }
+    @media only screen and (max-width: 950px) {
+      footer .iframeMapa {
+        width: 150px;
+        height: 112px;
+        margin: 0 auto; } }
+  footer .datosFooter {
+    font-family: "Lexend Peta", sans-serif;
+    color: #d4c0c0;
+    letter-spacing: -.2rem;
+    font-size: 1.5rem;
+    margin-right: 15px;
+    display: flex;
+    justify-content: flex-end; }
+    footer .datosFooter .listaFooter {
+      list-style: none; }
+      footer .datosFooter .listaFooter .fa-location-dot, footer .datosFooter .listaFooter .fa-phone, footer .datosFooter .listaFooter .fa-envelope {
+        margin-right: 20px; }
+  @media only screen and (max-width: 950px) {
+    footer .datosFooter, footer .fraseFooter, footer .linkFooter {
+      padding: 5px;
+      font-size: 1rem;
+      margin: 0 auto; } }
+
+#footerIndex {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-}
-.fraseFooter{
-  margin-left: 15px;
-  display: flex;
-  align-items: flex-start;
-}
-.linkFooter{
+  justify-content: space-between; }
+  @media only screen and (max-width: 950px) {
+    #footerIndex {
+      flex-direction: column; } }
+
+.linkFooter {
   color: black;
   margin-left: 25px;
-  padding: 5px;
-}
-.datosFooter{
-  font-family: 'Lexend Peta', sans-serif;
-  color:rgb(212, 192, 192);
-  letter-spacing: -.2rem;
-  font-size: 1.5rem;
-  margin-right: 15px;
-  display: flex;
-  justify-content: flex-end;
-}
-.listaFooter{
-  list-style: none;
-}
-.fa-location-dot, .fa-phone, .fa-envelope{
-  margin-right: 20px;
-}
-.fa-registered{
-  padding: 5px;
-}
+  padding: 5px; }
 
-/*QUIENES SOMOS*/
-.descripcionQuienesSomos{
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
-}
-.descripcionQuienesSomos p{
-  font-size: 2.5rem;
-  padding: 50px;
-}
-.pablito{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 25% 75%;
-  grid-template-areas: 
-  "tituloPablo fotoPablo"
-  "parrafoPablo fotoPablo";
-  justify-items: center;
-}
-.fotoPablo{
-  padding: 30px;
-  grid-area: fotoPablo;
-  overflow: hidden;
-	box-shadow: 0 5px 15px 0px rgba(22, 22, 22, 0.6);
-	transform: translatey(0px);
-	animation: float 5s ease-in-out infinite;
-}
-@keyframes float {
-	0% {
-		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-		transform: translatey(0px);
-	}
-	50% {
-		box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0);
-		transform: translatey(-50px);
-	}
-	100% {
-		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-		transform: translatey(0px);
-	}
-}
-h3{
-  font-family: 'Lilita One', serif;
+h2 {
+  font-family: "Lexend Peta", sans-serif;
+  text-decoration: underline;
+  text-align: center;
+  font-size: 3rem;
+  color: #d4c0c0;
+  font-weight: 500;
+  text-shadow: 1px 1px #d49a9a;
+  padding: 25px;
+  width: auto; }
+  @media only screen and (max-widht: 950px) {
+    h2 {
+      padding: 25px;
+      font-size: 2rem; } }
+  @media only screen and (max-width: 480px) {
+    h2 {
+      padding: 15px;
+      font-size: 1.8rem;
+      text-decoration: none;
+      height: 60%; } }
+
+p {
+  font-size: 1.6rem;
+  text-align: justify;
+  font-family: "Kaushan Script", serif;
+  color: #d4c0c0; }
+
+h3 {
+  font-family: "Lilita One", serif;
   font-weight: 600;
   font-size: 3rem;
   text-decoration: double underline;
   text-align: center;
-  padding: 25px;
-}
-.tituloPablo{
-  grid-area: titulo;
-}
-.descripcionPablo{
-  grid-area: parrafoPablo;
-}
-.migue{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 25% 75%;
-  grid-template-areas: 
-  "fotoMigue titulo"
-  "fotoMigue parrafoMigue";
-  justify-items: center;
-}
-.fotoMigue{
-  grid-area: fotoMigue;
-  padding: 30px;
-  transform: translatey(0px);
-	animation: float 5s ease-in-out infinite;
-}
-.divMigue, .descripcionMigue, .divPablito, .descripcionPablo{
-  background-image: linear-gradient(to right, #290d0d, #b03232);
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.divMigue, .descripcionMigue{
-  background-image: linear-gradient(to left, #290d0d, #b03232);
-}
-.tituloMigue{
-  grid-area: titulo;
-}
-.descripcionMigue{
-  grid-area: parrafoMigue;
- }
-.parrafoQuienesSomos{
-   text-align: center;
-   font-size: 2rem;
- }
+  padding: 25px; }
 
- /*SERVICIOS*/
- .tituloServicios{
-   margin-bottom: 20px;
- }
- .serviciosUno, .serviciosDos{
-   display: flex;
-   align-items: center;
-   justify-content: space-around;
- }
-  #hammerScreen, .screenHammer{
-   width: 20%;
- }
- .descripcionServicios{
-   padding: 20px;
-   font-size: 2rem;
-   text-align: center;
- }
- .serviciosUno p, .serviciosDos p{
-   border: 5px solid #111010;
-   box-shadow: 0 5px 10px rgb(38, 39, 41);
-}
-.serviciosTres{
-  margin-left: 25px;
-  margin-right: 25px;
-}
-.serviciosTres p{
-  margin-top: 20px;
-  border: 5px solid #111010;
-  box-shadow: 0 5px 10px rgb(38, 39, 41);
-}
+.tituloPosicion {
+  position: relative; }
+  .tituloPosicion .imagenJusticia {
+    display: inline-block;
+    width: 100%;
+    background-attachment: fixed; }
+  .tituloPosicion #tituloIndex {
+    font-family: "Lexend Peta", sans-serif;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 900;
+    padding: 10px;
+    width: 600px;
+    position: absolute;
+    top: 30%;
+    left: 5%; }
+    @media only screen and (max-width: 950px) {
+      .tituloPosicion #tituloIndex {
+        font-size: 2rem;
+        width: 300px; } }
+    @media only screen and (max-width: 480px) {
+      .tituloPosicion #tituloIndex {
+        font-weight: 800;
+        color: #eddfdf;
+        width: 300px;
+        position: relative;
+        margin: 0 auto;
+        left: 0; } }
+  @media only screen and (max-width: 950px) {
+    .tituloPosicion {
+      display: inline-block; } }
+  @media only screen and (max-width: 480px) {
+    .tituloPosicion {
+      display: flex;
+      flex-direction: column; } }
 
- /*CLIENTES*/
-.parrafoClientes{
-  margin-top: 10vh; 
+.parteIndexDos {
+  padding: 7% 1.3rem 5% 1.3rem;
+  background: linear-gradient(to right, rgba(240, 233, 233, 0.936), rgba(179, 215, 215, 0.936));
+  align-items: center; }
+  .parteIndexDos .tituloEstudio {
+    color: #0a0909;
+    text-shadow: 2px 2px #d49a9a; }
+  .parteIndexDos .anim-typewriter {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite; }
+    @media only screen and (max-widht: 950px) {
+      .parteIndexDos .anim-typewriter {
+        white-space: normal; } }
+
+@keyframes typing {
+  from {
+    width: 0; }
+  to {
+    width: 100%; } }
+  .parteIndexDos .parrafoPrincipal {
+    color: #0a0909;
+    font-size: 2.5rem;
+    text-decoration: solid;
+    line-height: 30px;
+    text-align: center;
+    padding: 75px; }
+    @media only screen and (max-widht: 950px) {
+      .parteIndexDos .parrafoPrincipal {
+        font-size: 2rem; } }
+  @media only screen and (max-widht: 950px) {
+    .parteIndexDos {
+      display: flex;
+      flex-direction: column; } }
+
+.parrafo__color {
+  padding: 2vh; }
+  .parrafo__color .segundoParrafo {
+    color: #d4c0c0;
+    font-size: 2rem;
+    padding: 50px;
+    text-align: center; }
+    @media only screen and (max-width: 480px) {
+      .parrafo__color .segundoParrafo {
+        font-size: 1.6rem; } }
+
+.galeria__posicion .carousel__fotos {
+  transition: transform 0.8s cubic-bezier(0, 0.98, 1, 1); }
+  .galeria__posicion .carousel__fotos .galeriaClientes {
+    margin: 0 auto;
+    filter: drop-shadow(2px 2px #000); }
+    @media only screen and (max-width: 950px) {
+      .galeria__posicion .carousel__fotos .galeriaClientes {
+        width: 50%; } }
+    @media only screen and (max-width: 480px) {
+      .galeria__posicion .carousel__fotos .galeriaClientes {
+        display: flex;
+        flex-direction: column;
+        padding: 10px; } }
+
+main p {
+  color: #d4c0c0;
+  font-size: 2rem;
+  text-decoration: solid;
+  line-height: 30px;
+  text-align: center;
+  padding: 75px; }
+  @media only screen and (max-width: 950px) {
+    main p {
+      font-size: 1.5rem; } }
+
+main form {
+  margin: 0 auto;
+  width: 400px;
+  padding: 1em;
+  border: 2px solid black;
+  border-radius: 1em; }
+  @media only screen and (max-width: 950px) {
+    main form {
+      width: 250px; } }
+  main form label {
+    display: inline-block;
+    width: 90%;
+    text-align: center;
+    font-family: "Lilita One", serif;
+    font-size: 1.8em; }
+    @media only screen and (max-width: 950px) {
+      main form label {
+        font-size: 1.4em !important; } }
+  main form input, main form textarea {
+    font: 1.8em sans-serif !important;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #999; }
+    @media only screen and (max-width: 950px) {
+      main form input, main form textarea {
+        font-size: 1.4em !important; } }
+  main form button {
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Lilita One', serif;
+    font-size: 1.5em; }
+    main form button:hover {
+      background-color: #000;
+      color: #fff; }
+    main form button:focus {
+      background-color: #6e4444;
+      color: #b9a0a0; }
+    main form button li {
+      list-style: none; }
+
+.parrafoClientes {
+  margin-top: 10vh;
   margin-bottom: 5vh;
   font-size: 2rem;
   text-align: center;
+  padding: 20px; }
+
+.argento, .bajoCero {
+  height: 70%; }
+
+#tituloEspecializacion {
+  padding: 20px; }
+
+.especializacion p {
   padding: 20px;
-}
-.galeriaClientes{
-  margin: 0 auto;
-  filter: drop-shadow(2px 2px #000);
-} 
-.galeria__posicion{
+  font-size: 2rem;
+  text-align: center;
+  flex-basis: 60vh; }
+  @media only screen and (max-width: 950px) {
+    .especializacion p {
+      font-size: 1.5rem; } }
+
+.especializacion h3 {
+  text-align: center;
+  flex-basis: 60vh;
+  color: #d4c0c0; }
+  @media only screen and (max-width: 950px) {
+    .especializacion h3 {
+      font-size: 2rem; } }
+
+.especializacion .derechoLaboral, .especializacion .derechoDaños, .especializacion .derechoSalud, .especializacion .derechoCivil {
   display: flex;
-  justify-content: center;
   align-items: center;
-}
-.carousel__fotos {
-  transition: transform .8s cubic-bezier(0, 0.98, 1, 1);
-}
+  justify-content: space-around; }
+  @media only screen and (max-widht480px) {
+    .especializacion .derechoLaboral, .especializacion .derechoDaños, .especializacion .derechoSalud, .especializacion .derechoCivil {
+      flex-direction: column; } }
 
+.especializacion .derechoDaños, .especializacion .derechoCivil {
+  flex-direction: row-reverse; }
 
-@media only screen and (max-width: 950px){
-  header{
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-  .logoEstudio{
-    width: 150px;
-    height: 127px;    
-  }
-  .barraDeNavegacion{
-    text-align: center; 
-  } 
-  a{
-    font-size: 1.1rem;
-  }
-  .tituloPosicion{
-    display:inline-block;
-  }
-  #tituloIndex{
-    font-size: 2rem;
-    width: 300px;
-  }
-  .parrafo__maxwidht{
-    display: flex;
-  }
-  .iframeMapa{
-    width: 150px;
-    height: 112px;
-    margin: 0 auto;
-   }
-   #footerIndex{
-    display: flex;
-    flex-direction: column;
-   }
-   .datosFooter, .fraseFooter, .linkFooter{
-    padding: 5px;
-    font-size: 1rem;
-    margin: 0 auto;
-   }
-   .fa-whatsapp-square{
-    font-size: 30px;
-   } 
-   .parteIndexDos{
-    display: flex;
-    flex-direction: column;
-   }
-   h2{
-    padding: 25px;
-    font-size: 2rem;    
-  }
-  .parrafoPrincipal{
-    font-size: 2rem;
-  }
-  .descripcionServicios{
-    font-size: 1.5rem;
-  }
-  .descripcionQuienesSomos p{
-    font-size: 2rem;
-    padding: 25px;
-  }
-  .parrafoQuienesSomos, .tituloMigue, .tituloPablo{
-    font-size: 1.7rem;
-    padding: 17px;
-  }
-  .pablito, .migue{
-    display: flex;
-    flex-direction: column;
-  }
-  .fotoMigue, .fotoPablo{
-    margin: 0 auto;
-    animation: none;
-  }
-  table, caption{
-    font-size: 1rem;
-  }
-   .galeriaClientes img{
-     width: 50%;
-   }
-   .especializacion p{
-    font-size: 1.5rem;
-   }
-  .especializacion h3{
-    font-size: 2rem;
-  }
-  main p{
-    font-size: 1.4rem;
-  }
-  form{
-    width: 250px;
-  }
-  label, input, textarea{
-    font-size: 1.4em !important;
-  }
-  .anim-typewriter{
-    white-space: normal;
-  }
-}
+.especializacion .derechoLaboral {
+  margin-top: 20px; }
 
-@media only screen and (max-width: 480px) {
-  body{
-    /* background-color: rgba(79, 8, 8, 0.936); */
-    background-image: linear-gradient(to bottom, rgba(76, 5, 5, 0.936), rgba(106, 44, 44, 0.936))
-  }
-  header{
-    display: flex;
+.parrafoEnlacesinteres {
+  padding: 15px 0;
+  text-decoration: underline; }
+
+@media only screen and (max-widht: 480px) {
+  .linksInteres {
     flex-direction: column;
-  }
-  .logoEstudio{
-    width: 100px;
-    height: 85px;    
-    margin: 0 auto;
-  }
-  .linksDerecha{
-    display: flex;
-    flex-direction: column;
-  }
-  .barraDeNavegacion ul li {
-    padding: 5px;
-  }
-  .tituloPosicion{
-    display: flex;
-    flex-direction: column;
-  }
-  #tituloIndex{
-    font-weight: 800;
-    color:rgb(237, 223, 223);
-    width: 300px;
-    position:relative;
-    margin: 0 auto;
-    left: 0;
-  }
-  h2{
-    padding: 15px;
-    font-size: 1.8rem;
-    text-decoration: none;
-    height: 60%;
-  }
-  .segundoParrafo{
-    font-size: 1.3rem;
-  }  
-  h3.tituloPablo, h3.tituloMigue, .descripcionQuienesSomos p{
-    text-align: center;
-    font-size: 1.5rem;
-  }
-  .parrafoQuienesSomos{
-    font-size: 1.5rem;
-    padding: 17px;
-  }
-  .fotoPablo, .fotoMigue{
-    padding: 0;
-    height: 100%;
-    width: 100%;
-    display:flex;
-    justify-content: center;
-    }
-  .fotito{
-    height:143px;
-    width: 114px;
-    padding: 0;
-    border: none;
-  }
-  .fotitodos{
-    height:143px;
-    width: 83px;
-    border: none;
-    padding: 0;
-  }
+    align-items: center; } }
+
+.linksInteres .enlacesInteres {
+  font-family: "Belgrano", serif;
+  font-size: 1.5rem;
+  color: #d4c0c0;
+  padding: 0 20px; }
+
+.tituloServicios {
+  margin-bottom: 20px; }
+
+.serviciosUno, .serviciosDos {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+  .serviciosUno #hammerScreen, .serviciosUno .screenHammer, .serviciosDos #hammerScreen, .serviciosDos .screenHammer {
+    width: 20%; }
+    @media only screen and (max-widht: 480px) {
+      .serviciosUno #hammerScreen, .serviciosUno .screenHammer, .serviciosDos #hammerScreen, .serviciosDos .screenHammer {
+        width: 40%; } }
+  .serviciosUno p, .serviciosDos p {
+    border: 5px solid #111010;
+    box-shadow: 0 5px 10px #262729; }
+
+@media only screen and (max-widht: 480px) {
   .serviciosUno {
     display: flex;
-    flex-direction: column;
-  }
-  .serviciosDos{
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  #hammerScreen, .screenHammer{
-      width: 40%;
-    }
-  .galeriaClientes{
-      display: flex;
-      flex-direction: column;
-     }
-  .galeriaClientes img{
-    padding: 10px;
-     }
-  .argento, .bajoCero{
-    height: 70%;
-  }
-  .derechoLaboral, .derechoDaños,.derechoSalud, .derechoCivil{
-    flex-direction: column;
-  }
-  .linksInteres{
-    flex-direction: column;
-    align-items: center;
-  }
-}
+    flex-direction: column; } }
 
+@media only screen and (max-widht: 480px) {
+  .serviciosDos {
+    display: flex;
+    flex-direction: column-reverse; } }
+
+.serviciosTres {
+  margin-left: 25px;
+  margin-right: 25px; }
+  .serviciosTres p {
+    margin-top: 20px;
+    border: 5px solid #111010;
+    box-shadow: 0 5px 10px #262729; }
+  .serviciosTres .descripcionServicios {
+    padding: 20px;
+    font-size: 2rem;
+    text-align: center; }
+    @media only screen and (max-widht: 950px) {
+      .serviciosTres .descripcionServicios {
+        font-size: 1.5rem; } }
+
+.tabla {
+  padding: 30px;
+  border-collapse: collapse;
+  font-family: "Belgrano", serif;
+  font-size: 1.5rem;
+  color: #0a0909;
+  background-image: linear-gradient(to right, rgba(240, 233, 233, 0.936), rgba(179, 215, 215, 0.936));
+  flex-direction: column; }
+  @media only screen and (max-widht: 950px) {
+    .tabla {
+      font-size: 1rem; } }
+  .tabla caption {
+    color: #0a0909;
+    letter-spacing: 2px;
+    padding: 10px;
+    font-weight: 600;
+    font-family: "Belgrano", serif;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 3rem; }
+    @media only screen and (max-widht: 950px) {
+      .tabla caption {
+        font-size: 1rem; } }
+  .tabla th {
+    padding: 10px;
+    border: 1px solid black; }
+  .tabla tr {
+    padding: 10px;
+    border: 1px solid black; }
+  .tabla td {
+    padding: 10px;
+    border: 1px solid black; }
+
+.aclaracionTabla {
+  color: #d4c0c0;
+  font-size: 1rem;
+  margin-left: 15px; }
+
+.descripcionQuienesSomos {
+  padding: 30px;
+  display: flex;
+  flex-direction: column; }
+  .descripcionQuienesSomos p {
+    font-size: 2.5rem;
+    padding: 50px; }
+    @media only screen and (max-width: 950px) {
+      .descripcionQuienesSomos p {
+        font-size: 2rem; } }
+    @media only screen and (max-width: 480px) {
+      .descripcionQuienesSomos p {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 10px; } }
+
+.pablito {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 25% 75%;
+  grid-template-areas: "tituloPablo fotoPablo" "parrafoPablo fotoPablo";
+  justify-items: center; }
+  @media only screen and (max-width: 950px) {
+    .pablito {
+      display: flex;
+      flex-direction: column; } }
+  .pablito .tituloPablo {
+    grid-area: titulo; }
+    @media only screen and (max-width: 950px) {
+      .pablito .tituloPablo {
+        font-size: 2rem;
+        padding: 17px; } }
+    @media only screen and (max-width: 480px) {
+      .pablito .tituloPablo {
+        text-align: center;
+        font-size: 1.5rem; } }
+  .pablito .fotoPablo {
+    background-image: linear-gradient(to right, rgba(240, 233, 233, 0.936), rgba(179, 215, 215, 0.936));
+    padding: 30px;
+    grid-area: fotoPablo;
+    overflow: hidden;
+    box-shadow: 0 5px 15px 0px rgba(22, 22, 22, 0.6);
+    transform: translatey(0px);
+    animation: float 5s ease-in-out infinite; }
+    @media only screen and (max-width: 950px) {
+      .pablito .fotoPablo {
+        margin: 0 auto;
+        animation: none; } }
+    @media only screen and (max-width: 480px) {
+      .pablito .fotoPablo {
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center; } }
+
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px); }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0);
+    transform: translatey(-50px); }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px); } }
+  .pablito .descripcionPablo {
+    grid-area: parrafoPablo; }
+    .pablito .descripcionPablo .parrafoQuienesSomos {
+      text-align: center;
+      font-size: 2rem; }
+      @media only screen and (max-width: 950px) {
+        .pablito .descripcionPablo .parrafoQuienesSomos {
+          font-size: 1.7rem;
+          padding: 25px; } }
+      @media only screen and (max-width: 480px) {
+        .pablito .descripcionPablo .parrafoQuienesSomos {
+          font-size: 1.5rem;
+          padding: 17px; } }
+
+.migue {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 25% 75%;
+  grid-template-areas: "fotoMigue titulo" "fotoMigue parrafoMigue";
+  justify-items: center; }
+  @media only screen and (max-width: 950px) {
+    .migue {
+      display: flex;
+      flex-direction: column; } }
+  .migue .fotoMigue {
+    background-image: linear-gradient(to right, rgba(240, 233, 233, 0.936), rgba(179, 215, 215, 0.936));
+    grid-area: fotoMigue;
+    padding: 30px;
+    transform: translatey(0px);
+    animation: float 5s ease-in-out infinite; }
+    @media only screen and (max-width: 950px) {
+      .migue .fotoMigue {
+        margin: 0 auto;
+        animation: none; } }
+    @media only screen and (max-width: 480px) {
+      .migue .fotoMigue {
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center; } }
+  .migue .tituloMigue {
+    grid-area: titulo; }
+    @media only screen and (max-width: 950px) {
+      .migue .tituloMigue {
+        font-size: 2rem;
+        padding: 17px; } }
+    @media only screen and (max-width: 480px) {
+      .migue .tituloMigue {
+        text-align: center;
+        font-size: 1.5rem; } }
+  .migue .descripcionMigue {
+    grid-area: parrafoMigue; }
+    .migue .descripcionMigue .parrafoQuienesSomos {
+      text-align: center;
+      font-size: 2rem; }
+      @media only screen and (max-width: 950px) {
+        .migue .descripcionMigue .parrafoQuienesSomos {
+          font-size: 1.7rem;
+          padding: 25px; } }
+      @media only screen and (max-width: 480px) {
+        .migue .descripcionMigue .parrafoQuienesSomos {
+          font-size: 1.5rem;
+          padding: 17px; } }
+
+@media only screen and (max-width: 480px) {
+  .fotito {
+    height: 143px;
+    width: 114px;
+    padding: 0;
+    border: none; } }
+
+@media only screen and (max-width: 480px) {
+  .fotitodos {
+    height: 143px;
+    width: 83px;
+    border: none;
+    padding: 0; } }
+
+.divMigue, .descripcionMigue, .divPablito, .descripcionPablo {
+  width: 100%; }

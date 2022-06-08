@@ -1,0 +1,172 @@
+.descripcionQuienesSomos{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    p{
+        font-size: 2.5rem;
+        padding: 50px;
+        @media only screen and (max-width: 950px){
+            font-size: 2rem;
+        }
+        @media only screen and (max-width: 480px) {
+            text-align: center;
+            font-size: 1.5rem;
+            padding: 10px;
+          }
+    }
+}
+.pablito{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 25% 75%;
+    grid-template-areas: 
+    "tituloPablo fotoPablo"
+    "parrafoPablo fotoPablo";
+    justify-items: center;
+    @media only screen and (max-width: 950px){
+        display: flex;
+        flex-direction: column;
+      }
+    .tituloPablo{
+        grid-area: titulo;
+        @media only screen and (max-width: 950px){
+            font-size: 2rem;
+            padding: 17px;
+        }
+        @media only screen and (max-width: 480px) {
+            text-align: center;
+            font-size: 1.5rem;
+          }
+    }
+    .fotoPablo{
+        background-image: $bg-index;
+        padding: 30px;
+        grid-area: fotoPablo;
+        overflow: hidden;
+        box-shadow: 0 5px 15px 0px rgba(22, 22, 22, 0.6);
+        transform: translatey(0px);
+        animation: float 5s ease-in-out infinite;
+        @media only screen and (max-width: 950px){
+            margin: 0 auto;
+            animation: none;
+        }
+        @media only screen and (max-width: 480px) {
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            display:flex;
+            justify-content: center;
+          }
+    }
+    @keyframes float {
+        0% {
+            box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+            transform: translatey(0px);
+        }
+        50% {
+            box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0);
+            transform: translatey(-50px);
+        }
+        100% {
+            box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+            transform: translatey(0px);
+        }
+    }
+    .descripcionPablo{
+        grid-area: parrafoPablo;
+        .parrafoQuienesSomos{
+            text-align: center;
+            font-size: 2rem;
+            @media only screen and (max-width: 950px){
+                font-size: 1.7rem;
+                padding: 25px;
+            }
+            @media only screen and (max-width: 480px) {
+                font-size: 1.5rem;
+                padding: 17px;
+              }
+       }
+    }
+}
+
+.migue{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 25% 75%;
+    grid-template-areas: 
+    "fotoMigue titulo"
+    "fotoMigue parrafoMigue";
+    justify-items: center;
+    @media only screen and (max-width: 950px){
+        display: flex;
+        flex-direction: column;
+      }
+    .fotoMigue{
+        background-image: $bg-index;
+        grid-area: fotoMigue;
+        padding: 30px;
+        transform: translatey(0px);
+        animation: float 5s ease-in-out infinite;
+        @media only screen and (max-width: 950px){
+            margin: 0 auto;
+            animation: none;
+        }
+        @media only screen and (max-width: 480px) {
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            display:flex;
+            justify-content: center;
+          }
+    }
+    .tituloMigue{
+        grid-area: titulo;
+        @media only screen and (max-width: 950px){
+            font-size: 2rem;
+            padding: 17px;
+        }
+        @media only screen and (max-width: 480px) {
+            text-align: center;
+            font-size: 1.5rem;
+          }
+    }
+    .descripcionMigue{
+        grid-area: parrafoMigue;
+        .parrafoQuienesSomos{
+            text-align: center;
+            font-size: 2rem;
+            @media only screen and (max-width: 950px){
+                font-size: 1.7rem;
+                padding: 25px;
+            }
+            @media only screen and (max-width: 480px) {
+                font-size: 1.5rem;
+                padding: 17px;
+              }
+       }
+    }
+    
+}
+.fotito{
+    @media only screen and (max-width: 480px) {
+        height:143px;
+        width: 114px;
+        padding: 0;
+        border: none; 
+    }
+}
+.fotitodos{
+    @media only screen and (max-width: 480px) {
+        height:143px;
+        width: 83px;
+        border: none;
+        padding: 0;
+    }
+  }
+.divMigue, .descripcionMigue, .divPablito, .descripcionPablo{
+    width: 100%;
+    @extend %dpflex;
+}
+
+
+

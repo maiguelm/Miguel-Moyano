@@ -1,0 +1,110 @@
+.tituloPosicion{
+    position:relative;
+    .imagenJusticia{
+        display: inline-block;
+        width: 100%;
+        background-attachment: fixed;
+    }
+    #tituloIndex{
+        @include titulos($font-one, $underline, $align-center, 'true');
+        font-weight: 900;
+        padding: 10px;
+        width: 600px;
+        position: absolute;
+        top: 30%;
+        left:5%;
+        @media only screen and (max-width: 950px){
+            font-size: 2rem;
+            width: 300px;
+        }
+        @media only screen and (max-width: 480px) {
+            font-weight: 800;
+            color:rgb(237, 223, 223);
+            width: 300px;
+            position:relative;
+            margin: 0 auto;
+            left: 0;
+        }
+    }
+    @media only screen and (max-width: 950px){
+        display: inline-block;
+    }
+    @media only screen and (max-width: 480px){
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+.parteIndexDos{
+    padding: 7% 1.3rem 5% 1.3rem;
+    background: $bg-index;
+    align-items: center;
+    .tituloEstudio{
+        color: $txt-index;
+        text-shadow: 2px 2px $shadow-txt;
+    }
+    .anim-typewriter{
+        overflow: hidden; 
+        white-space: nowrap; 
+        margin: 0 auto; 
+        letter-spacing: .15em; 
+        animation: 
+          typing 3.5s steps(30, end),
+          blink-caret .5s step-end infinite;
+        @media only screen and(max-widht: 950px) {
+            white-space: normal;
+        }
+      }
+      @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+      }
+      .parrafoPrincipal{
+        color: $txt-index;
+        font-size: 2.5rem;
+        text-decoration:solid;
+        line-height: 30px;
+        text-align: center;
+        padding: 75px;
+        @media only screen and (max-widht: 950px) {
+            font-size: 2rem;
+        }
+    }
+    @media only screen and (max-widht: 950px){
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.parrafo__color{
+    padding: 2vh;
+    .segundoParrafo {
+        color: $txtcl;
+        font-size: 2rem;
+        padding: 50px;
+        text-align: center;
+        @media only screen and (max-width: 480px){
+            font-size: 1.6rem;
+        }
+    }
+}
+.galeria__posicion{
+    @extend %dpflex;
+    .carousel__fotos {
+        transition: transform .8s cubic-bezier(0, 0.98, 1, 1);
+        .galeriaClientes{
+            margin: 0 auto;
+            filter: drop-shadow(2px 2px #000);
+            @media only screen and (max-width:950px) {
+                width: 50%;               
+            }
+            @media only screen and (max-width:480px){
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+            }
+        } 
+    }
+}
+

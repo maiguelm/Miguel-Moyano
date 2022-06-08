@@ -1,0 +1,185 @@
+html {
+    font-size: 62.5%;
+}
+*{
+    box-sizing: border-box;
+    @include reset-pm();
+}
+body{
+    background: $bg;
+}
+header{
+    display: flex;
+    flex-flow: row  nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    @media only screen and(max-width: 950px) {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    @media only screen and (max-width: 480px){
+        flex-direction: column;
+        align-items: center;
+    }
+}   
+.logoEstudio{
+    @media only screen and (max-width: 950px){
+        width: 100px;
+        height: 85px; 
+    }
+    @media only screen and (max-width: 480px){
+        width: 100px;
+        height: 85px;    
+        margin: 0 auto;
+    }
+}
+.barraDeNavegacion{
+    ul{
+        li{
+            padding: 20px;
+            @media only screen and (max-width: 480px){
+                padding: 5px;
+            }
+        }
+    }
+    @media only screen and (max-width: 950px){
+        text-align: center;
+    }
+}
+.linksDerecha{
+    list-style: none;
+    display: flex;
+    transition: .5s linear;
+    &:hover{
+        color: $txt-white;
+        text-shadow: 0 0 15px white,
+        0 0 30px white,
+        0 0 60px white;
+    }
+    &:hover:nth-child(1){
+        margin-right: 5px;
+    }
+    &:hover:nth-child(2){
+        margin-right: 30px;
+    }
+    a{
+        text-decoration: none;
+        color: #fff;
+        font-family: $font-one;
+        font-size: 1.6rem;
+        font-weight: 300;
+        &:hover{
+            color: darkkhaki;
+        }
+    }
+    @media only screen and (max-width: 480px){
+        flex-direction: column;
+    }
+}
+.fa-whatsapp-square{
+    font-size: 50px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    color: rgb(48, 204, 48);
+    @media only screen and (max-width: 950px){
+        font-size: 30px;
+    } 
+}
+footer{
+    padding: 15px;
+    .fraseFooter{
+        margin-left: 15px;
+        display: flex;
+        align-items: flex-start;
+    }
+    .fa-registered{
+        padding: 5px;
+    }
+    .iframeMapa{
+        margin-left: 100px;
+        display:flex;
+        justify-content: center;
+        width: 300px;
+        height: 225px;
+        @media only screen and (max-width: 950px){
+            width: 150px;
+            height: 112px;
+            margin: 0 auto;
+        }
+    }
+    .datosFooter{
+        font-family: $font-one;
+        color:$txtcl;
+        letter-spacing: -.2rem;
+        font-size: 1.5rem;
+        margin-right: 15px;
+        display: flex;
+        justify-content: flex-end;
+        .listaFooter{
+            list-style: none;
+            .fa-location-dot, .fa-phone, .fa-envelope{
+                margin-right: 20px;
+            }
+        }
+    }
+    @media only screen and (max-width: 950px){
+        .datosFooter, .fraseFooter, .linkFooter{
+            padding: 5px;
+            font-size: 1rem;
+            margin: 0 auto;
+           }
+    }
+
+}
+#footerIndex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media only screen and (max-width: 950px){
+        flex-direction: column;
+    }
+}
+
+.linkFooter{
+    color: black;
+    margin-left: 25px;
+    padding: 5px;
+} 
+
+h2{
+    @include titulos($font-one, $underline,$align-center, 'false');
+    color: $txtcl;
+    font-weight: 500;
+    text-shadow: 1px 1px $shadow-txt;
+    padding: 25px;
+    width: auto;
+    @media only screen and (max-widht: 950px) {
+        padding: 25px;
+        font-size: 2rem;   
+    }
+    @media only screen and (max-width: 480px){
+        padding: 15px;
+        font-size: 1.8rem;
+        text-decoration: none;
+        height: 60%;
+    }
+}
+
+p{
+    font-size: 1.6rem;
+    text-align: justify;
+    font-family: $font-two;
+    color: $txtcl;
+}
+
+h3{
+    font-family: $font-three;
+    font-weight: 600;
+    font-size: 3rem;
+    text-decoration: double underline;
+    text-align: center;
+    padding: 25px;
+}
+
+

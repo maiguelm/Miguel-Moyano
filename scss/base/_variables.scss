@@ -1,0 +1,47 @@
+//colores de texto
+$txtcl: rgb(212, 192, 192);
+$txtcl-two: #f29;
+$txt-white: #fff;
+$shadow-txt: rgb(212, 154, 154);
+$txt-index: rgb(10, 9, 9);
+
+//Fonts-Familys y letras
+$font-one: 'Lexend Peta', sans-serif;
+$font-two: 'Kaushan Script', serif;
+$font-three: 'Lilita One', serif;
+$font-four: 'Belgrano', serif;
+$underline: underline;
+$align-center: center;
+
+
+//Background
+$bg: linear-gradient(to right, rgba(76, 5, 5, 0.936), rgba(104, 35, 35, 0.936));
+$bg-index: linear-gradient(to right, rgba(240, 233, 233, 0.936), rgba(179, 215, 215, 0.936));
+
+
+//general
+
+@mixin reset-pm {
+    padding: 0;
+    margin: 0;
+}
+
+@mixin titulos($font-family, $underline, $align-center,$font-size) {
+    font-family: $font-family;
+    text-decoration: $underline;
+    text-align: $align-center;
+    @if($font-size == 'true'){
+        font-size: 4rem;
+    } @else if($font-size == 'false'){
+        font-size: 3rem;
+    }
+}
+%dpflex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+

@@ -1,0 +1,55 @@
+#tituloEspecializacion{
+    padding: 20px;
+}
+.especializacion{
+    p{
+        padding: 20px;
+        font-size: 2rem;
+        text-align: center;
+        flex-basis: 60vh;
+        @media only screen and (max-width: 950px){
+            font-size: 1.5rem;
+        }
+    }
+    h3{
+        text-align: center;
+        flex-basis: 60vh;
+        color: $txtcl;
+        @media only screen and (max-width: 950px){
+            font-size: 2rem;
+        }
+    }
+    .derechoLaboral, .derechoDaños,.derechoSalud, .derechoCivil{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        @media only screen and (max-widht480px){
+            flex-direction: column;
+        }
+    }
+    .derechoDaños, .derechoCivil{
+        flex-direction: row-reverse;
+    }
+    .derechoLaboral{
+        margin-top: 20px;
+    }
+    
+}
+.parrafoEnlacesinteres{
+    padding: 15px 0;
+    text-decoration: underline;
+}
+  
+.linksInteres{
+    @extend %dpflex;
+    @media only screen and (max-widht:480px) {
+        flex-direction: column;
+        align-items: center;
+        }
+    .enlacesInteres{
+        font-family: $font-four;
+        font-size: 1.5rem;;
+        color: $txtcl;
+        padding: 0 20px;
+    }
+}
