@@ -1,9 +1,0 @@
-
-
-SEO “AGREGADO” AL PROYECTO
-
--	Se cambiaron todos los títulos de las paginas
--	Se agregaron keywords
--	Se agregaron metas og, tendientes a redes sociales (conforme lo he googleado)
--	Se especificaron bien los alt
--	Se editaron las imágenes (algunas) a los efectos que sean menos pesadas. De todas maneras, ya había editado y seleccionado imágenes acordes a los tamaños que necesitaba
