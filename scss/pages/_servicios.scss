@@ -7,9 +7,8 @@
     align-items: center;
     justify-content: space-around;
     #hammerScreen, .screenHammer{
-        width: 20%;
-        @media only screen and (max-widht: 480px) {
-            width: 40%;
+        @media only screen and (max-width: 480px) {
+            width: 70%;
         }
     }
     p{
@@ -18,13 +17,12 @@
     }
 }
 .serviciosUno {
-    @media only screen and (max-widht: 480px){
-        display: flex;
+    @media only screen and (max-width: 480px){
         flex-direction: column;
     }
   }
-  .serviciosDos{
-    @media only screen and (max-widht: 480px){
+.serviciosDos{
+    @media only screen and (max-width: 480px){
         display: flex;
         flex-direction: column-reverse;
     }

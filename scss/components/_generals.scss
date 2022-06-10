@@ -181,5 +181,16 @@ h3{
     text-align: center;
     padding: 25px;
 }
-
-
+main{
+    p{
+        color: $txtcl;
+        font-size: map-get($styles, ft-size );
+        text-decoration:solid;
+        line-height: map-get($styles, line-height);
+        text-align: map-get($styles, txt-aligns);
+        padding: 75px;
+        @media only screen and (max-width: 950px){
+            font-size: 1.8rem;
+        }
+    }
+}

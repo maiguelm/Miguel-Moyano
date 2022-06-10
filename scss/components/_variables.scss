@@ -29,7 +29,7 @@ $bg-index: linear-gradient(to right, rgba(240, 233, 233, 0.936), rgba(179, 215, 
 @mixin titulos($font-family, $underline, $align-center,$font-size) {
     font-family: $font-family;
     text-decoration: $underline;
-    text-align: $align-center;
+    text-align: $align-center; 
     @if($font-size == 'true'){
         font-size: 4rem;
     } @else if($font-size == 'false'){
@@ -41,6 +41,15 @@ $bg-index: linear-gradient(to right, rgba(240, 233, 233, 0.936), rgba(179, 215, 
     justify-content: center;
     align-items: center;
 }
+
+$styles:(
+    shadow-txt: 1px 1px #d49a9a,
+    widht: 600,
+    pd-general: 25px,
+    txt-aligns: center,
+    line_height: 30px,
+    ft-size: 2rem,
+);
 
 
 

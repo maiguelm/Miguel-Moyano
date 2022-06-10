@@ -64,8 +64,8 @@
         color: $txt-index;
         font-size: 2.5rem;
         text-decoration:solid;
-        line-height: 30px;
-        text-align: center;
+        line-height: map-get($styles, line_height);
+        text-align: map-get($styles, txt-aligns);
         padding: 75px;
         @media only screen and (max-widht: 950px) {
             font-size: 2rem;
@@ -81,9 +81,9 @@
     padding: 2vh;
     .segundoParrafo {
         color: $txtcl;
-        font-size: 2rem;
-        padding: 50px;
-        text-align: center;
+        font-size: map-get($styles, ft-size);
+        padding: map-get($styles, pd-general);
+        text-align: map-get($styles, txt-aligns);
         @media only screen and (max-width: 480px){
             font-size: 1.6rem;
         }

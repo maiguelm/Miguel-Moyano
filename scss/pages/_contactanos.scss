@@ -1,16 +1,5 @@
 main{
-    p{
-        color: $txtcl;
-        font-size: 2rem;
-        text-decoration:solid;
-        line-height: 30px;
-        text-align: center;
-        padding: 75px;
-        @media only screen and (max-width: 950px){
-            font-size: 1.5rem;
-        }
-    }
-    form {
+     form {
         margin: 0 auto;
         width: 400px;
         padding: 1em;
