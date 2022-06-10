@@ -1,8 +1,8 @@
 .parrafoClientes{
     margin-top: 10vh; 
     margin-bottom: 5vh;
-    font-size: 2rem;
-    text-align: center;
+    font-size: map-get($styles, ft-size);
+    text-align: map-get($styles, txt-aligns);
     padding: 20px;
 }
 .argento, .bajoCero{
