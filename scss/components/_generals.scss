@@ -174,9 +174,11 @@ footer{
 }
 
 .linkFooter{
-    color: black;
+    color: $txtcl;
+    font-size: 1.6rem;
     margin-left: 25px;
     padding: 5px;
+    font-family: $font-one;
 } 
 
 h2{
@@ -216,7 +218,6 @@ h3{
 main{
     p{
         color: $txtcl;
-        font-size: map-get($styles, ft-size );
         text-decoration:solid;
         line-height: map-get($styles, line-height);
         text-align: map-get($styles, txt-aligns);

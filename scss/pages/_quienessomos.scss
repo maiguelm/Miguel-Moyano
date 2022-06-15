@@ -29,6 +29,7 @@
       }
     .tituloPablo{
         grid-area: titulo;
+        color: $txtcl - 30%;
         @media only screen and (max-width: 950px){
             font-size: 2rem;
             padding: 17px;
@@ -44,8 +45,6 @@
         grid-area: fotoPablo;
         overflow: hidden;
         box-shadow: 0 5px 15px 0px rgba(22, 22, 22, 0.6);
-        transform: translatey(0px);
-        animation: float 5s ease-in-out infinite;
         @media only screen and (max-width: 950px){
             margin: 0 auto;
             animation: none;
@@ -105,8 +104,6 @@
         background-image: $bg-index;
         grid-area: fotoMigue;
         padding: 30px;
-        transform: translatey(0px);
-        animation: float 5s ease-in-out infinite;
         @media only screen and (max-width: 950px){
             margin: 0 auto;
             animation: none;
@@ -121,6 +118,7 @@
     }
     .tituloMigue{
         grid-area: titulo;
+        color: $txtcl - 30%;
         @media only screen and (max-width: 950px){
             font-size: 2rem;
             padding: 17px;

@@ -157,9 +157,11 @@ footer {
       flex-direction: column; } }
 
 .linkFooter {
-  color: black;
+  color: #d4c0c0;
+  font-size: 1.6rem;
   margin-left: 25px;
-  padding: 5px; }
+  padding: 5px;
+  font-family: "Lexend Peta", sans-serif; }
 
 h2 {
   font-family: "Lexend Peta", sans-serif;
@@ -198,7 +200,6 @@ h3 {
 
 main p {
   color: #d4c0c0;
-  font-size: 2rem;
   text-decoration: solid;
   text-align: center;
   padding: 75px; }
@@ -244,6 +245,7 @@ main p {
       flex-direction: column; } }
 
 .parteIndexDos {
+  width: 80%;
   padding: 7% 1.3rem 5% 1.3rem;
   background: linear-gradient(to right, rgba(240, 233, 233, 0.936), rgba(179, 215, 215, 0.936));
   align-items: center; }
@@ -256,9 +258,10 @@ main p {
     margin: 0 auto;
     letter-spacing: .15em;
     animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite; }
-    @media only screen and (max-widht: 950px) {
+    @media only screen and (max-width: 950px) {
       .parteIndexDos .anim-typewriter {
-        white-space: normal; } }
+        white-space: normal;
+        animation: none; } }
 
 @keyframes typing {
   from {
@@ -272,9 +275,12 @@ main p {
     line-height: 30px;
     text-align: center;
     padding: 75px; }
-    @media only screen and (max-widht: 950px) {
+    @media only screen and (max-width: 950px) {
       .parteIndexDos .parrafoPrincipal {
         font-size: 2rem; } }
+    @media only screen and (max-width: 480px) {
+      .parteIndexDos .parrafoPrincipal {
+        font-size: 1.8rem; } }
   @media only screen and (max-widht: 950px) {
     .parteIndexDos {
       display: flex;
@@ -393,16 +399,17 @@ main form {
   padding: 15px 0;
   text-decoration: underline; }
 
-@media only screen and (max-widht: 480px) {
-  .linksInteres {
-    flex-direction: column;
-    align-items: center; } }
-
-.linksInteres .enlacesInteres {
-  font-family: "Belgrano", serif;
-  font-size: 1.5rem;
-  color: #d4c0c0;
-  padding: 0 20px; }
+.linksInteres {
+  list-style: none; }
+  @media only screen and (max-widht: 480px) {
+    .linksInteres {
+      flex-direction: column;
+      align-items: center; } }
+  .linksInteres .enlacesInteres {
+    font-family: "Belgrano", serif;
+    font-size: 1.5rem;
+    color: #d4c0c0;
+    padding: 0 20px; }
 
 .tituloServicios {
   margin-bottom: 20px; }
@@ -507,7 +514,8 @@ main form {
       display: flex;
       flex-direction: column; } }
   .pablito .tituloPablo {
-    grid-area: titulo; }
+    grid-area: titulo;
+    color: #b6a2a2; }
     @media only screen and (max-width: 950px) {
       .pablito .tituloPablo {
         font-size: 2rem;
@@ -521,9 +529,7 @@ main form {
     padding: 30px;
     grid-area: fotoPablo;
     overflow: hidden;
-    box-shadow: 0 5px 15px 0px rgba(22, 22, 22, 0.6);
-    transform: translatey(0px);
-    animation: float 5s ease-in-out infinite; }
+    box-shadow: 0 5px 15px 0px rgba(22, 22, 22, 0.6); }
     @media only screen and (max-width: 950px) {
       .pablito .fotoPablo {
         margin: 0 auto;
@@ -573,9 +579,7 @@ main form {
   .migue .fotoMigue {
     background-image: linear-gradient(to right, rgba(240, 233, 233, 0.936), rgba(179, 215, 215, 0.936));
     grid-area: fotoMigue;
-    padding: 30px;
-    transform: translatey(0px);
-    animation: float 5s ease-in-out infinite; }
+    padding: 30px; }
     @media only screen and (max-width: 950px) {
       .migue .fotoMigue {
         margin: 0 auto;
@@ -588,7 +592,8 @@ main form {
         display: flex;
         justify-content: center; } }
   .migue .tituloMigue {
-    grid-area: titulo; }
+    grid-area: titulo;
+    color: #b6a2a2; }
     @media only screen and (max-width: 950px) {
       .migue .tituloMigue {
         font-size: 2rem;

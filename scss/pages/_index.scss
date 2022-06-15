@@ -37,6 +37,7 @@
 }
 
 .parteIndexDos{
+    width: 80%;
     padding: 7% 1.3rem 5% 1.3rem;
     background: $bg-index;
     align-items: center;
@@ -52,8 +53,9 @@
         animation: 
           typing 3.5s steps(30, end),
           blink-caret .5s step-end infinite;
-        @media only screen and(max-widht: 950px) {
+        @media only screen and(max-width: 950px) {
             white-space: normal;
+            animation: none;
         }
       }
       @keyframes typing {
@@ -67,8 +69,11 @@
         line-height: map-get($styles, line_height);
         text-align: map-get($styles, txt-aligns);
         padding: 75px;
-        @media only screen and (max-widht: 950px) {
+        @media only screen and (max-width: 950px) {
             font-size: 2rem;
+        }
+        @media only screen and (max-width: 480px) {
+            font-size: 1.8rem;
         }
     }
     @media only screen and (max-widht: 950px){

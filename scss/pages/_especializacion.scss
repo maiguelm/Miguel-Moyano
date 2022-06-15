@@ -41,6 +41,7 @@
 }
   
 .linksInteres{
+    list-style: none;
     @extend %dpflex;
     @media only screen and (max-widht:480px) {
         flex-direction: column;
