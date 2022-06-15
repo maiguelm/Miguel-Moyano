@@ -41,14 +41,15 @@ header {
     margin: 0 auto; } }
 
 .barraDeNavegacion ul li {
-  padding: 20px; }
+  padding: 20px;
+  text-align: center; }
   @media only screen and (max-width: 480px) {
     .barraDeNavegacion ul li {
       padding: 5px; } }
 
 @media only screen and (max-width: 950px) {
   .barraDeNavegacion {
-    text-align: center; } }
+    display: none; } }
 
 .linksDerecha {
   list-style: none;
@@ -69,9 +70,36 @@ header {
     font-weight: 300; }
     .linksDerecha a:hover {
       color: darkkhaki; }
+    @media only screen and (max-width: 950px) {
+      .linksDerecha a {
+        font-size: 1.4rem;
+        text-align: center; } }
+  .linksDerecha li {
+    padding: 10px; }
+  @media only screen and (max-width: 950px) {
+    .linksDerecha {
+      background: linear-gradient(to right, rgba(76, 5, 5, 0.936), rgba(104, 35, 35, 0.936));
+      text-align: center;
+      background: transparent; } }
   @media only screen and (max-width: 480px) {
     .linksDerecha {
-      flex-direction: column; } }
+      flex-direction: column;
+      background: black;
+      padding: 40px; } }
+
+.barra {
+  display: none;
+  z-index: 100; }
+  @media only screen and (max-width: 950px) {
+    .barra {
+      display: inline-block;
+      position: absolute;
+      right: 1rem;
+      top: 1rem; } }
+  .barra .btn__nav {
+    color: #fff; }
+    .barra .btn__nav .btn__navflex {
+      justify-content: flex-end; }
 
 .fa-whatsapp-square {
   font-size: 50px;
@@ -141,11 +169,11 @@ h2 {
   color: #d4c0c0;
   font-weight: 500;
   text-shadow: 1px 1px #d49a9a;
-  padding: 25px;
+  padding: 15px;
   width: auto; }
-  @media only screen and (max-widht: 950px) {
+  @media only screen and (max-width: 1014px) {
     h2 {
-      padding: 25px;
+      padding: 15px;
       font-size: 2rem; } }
   @media only screen and (max-width: 480px) {
     h2 {
