@@ -29,7 +29,7 @@
       }
     .tituloPablo{
         grid-area: titulo;
-        color: $txtcl - 30%;
+        color: $txt-titulos;
         @media only screen and (max-width: 950px){
             font-size: 2rem;
             padding: 17px;
@@ -43,7 +43,6 @@
         background-image: $bg-index;
         padding: 30px;
         grid-area: fotoPablo;
-        overflow: hidden;
         box-shadow: 0 5px 15px 0px rgba(22, 22, 22, 0.6);
         @media only screen and (max-width: 950px){
             margin: 0 auto;
@@ -56,20 +55,6 @@
             display:flex;
             justify-content: center;
           }
-    }
-    @keyframes float {
-        0% {
-            box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-            transform: translatey(0px);
-        }
-        50% {
-            box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0);
-            transform: translatey(-50px);
-        }
-        100% {
-            box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-            transform: translatey(0px);
-        }
     }
     .descripcionPablo{
         grid-area: parrafoPablo;
@@ -118,7 +103,7 @@
     }
     .tituloMigue{
         grid-area: titulo;
-        color: $txtcl - 30%;
+        color: $txt-titulos;
         @media only screen and (max-width: 950px){
             font-size: 2rem;
             padding: 17px;

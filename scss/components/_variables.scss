@@ -1,9 +1,10 @@
 //colores de texto
-$txtcl: rgb(212, 192, 192);
+$txtcl: #d4c0c0;
 $txtcl-two: #f29;
 $txt-white: #fff;
-$shadow-txt: rgb(212, 154, 154);
-$txt-index: rgb(10, 9, 9);
+$txt-titulos: #b6a2a2;
+$shadow-txt: #d49a9a;
+$txt-index: #0a0909;
 
 //Fonts-Familys y letras
 $font-one: 'Lexend Peta', sans-serif;
@@ -15,8 +16,8 @@ $align-center: center;
 
 
 //Background
-$bg: linear-gradient(to right, rgba(76, 5, 5, 0.936), rgba(104, 35, 35, 0.936));
-$bg-index: linear-gradient(to right, rgba(240, 233, 233, 0.936), rgba(179, 215, 215, 0.936));
+$bg: linear-gradient(to right, #4b0505f8, #682323f8);
+$bg-index: linear-gradient(to right, rgba(0, 0, 0, 0.852), rgba(0, 0, 0, 0.415));
 
 
 //general

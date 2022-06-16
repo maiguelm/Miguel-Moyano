@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.galeria__posicion, .linksInteres, .tabla, .divMigue, .descripcionMigue, .divPablito, .descripcionPablo {
+.galeria__posicion, .linksInteres, .divMigue, .descripcionMigue, .divPablito, .descripcionPablo {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -13,7 +13,7 @@ html {
   margin: 0; }
 
 body {
-  background: linear-gradient(to right, rgba(76, 5, 5, 0.936), rgba(104, 35, 35, 0.936)); }
+  background: linear-gradient(to right, #4b0505f8, #682323f8); }
 
 header {
   display: flex;
@@ -78,14 +78,18 @@ header {
     padding: 10px; }
   @media only screen and (max-width: 950px) {
     .linksDerecha {
-      background: linear-gradient(to right, rgba(76, 5, 5, 0.936), rgba(104, 35, 35, 0.936));
+      background: linear-gradient(to right, #4b0505f8, #682323f8);
       text-align: center;
-      background: transparent; } }
+      background: rgba(0, 0, 0, 0.415);
+      border-radius: 10px;
+      height: 11vh;
+      align-items: center; } }
   @media only screen and (max-width: 480px) {
     .linksDerecha {
       flex-direction: column;
-      background: black;
-      padding: 40px; } }
+      background: rgba(0, 0, 0, 0.852);
+      padding: 40px;
+      height: 100%; } }
 
 .barra {
   display: none;
@@ -113,14 +117,10 @@ header {
 
 footer {
   padding: 15px; }
-  footer .fraseFooter {
-    margin-left: 15px;
-    display: flex;
-    align-items: flex-start; }
   footer .fa-registered {
     padding: 5px; }
   footer .iframeMapa {
-    margin-left: 100px;
+    margin-left: 22vh;
     display: flex;
     justify-content: center;
     width: 300px;
@@ -129,7 +129,7 @@ footer {
       footer .iframeMapa {
         width: 150px;
         height: 112px;
-        margin: 0 auto; } }
+        margin: 0 auto !important; } }
   footer .datosFooter {
     font-family: "Lexend Peta", sans-serif;
     color: #d4c0c0;
@@ -137,11 +137,19 @@ footer {
     font-size: 1.5rem;
     margin-right: 15px;
     display: flex;
-    justify-content: flex-end; }
+    justify-content: flex-end;
+    flex-direction: column; }
     footer .datosFooter .listaFooter {
       list-style: none; }
       footer .datosFooter .listaFooter .fa-location-dot, footer .datosFooter .listaFooter .fa-phone, footer .datosFooter .listaFooter .fa-envelope {
         margin-right: 20px; }
+    footer .datosFooter .icons__redes {
+      list-style: none;
+      display: flex;
+      justify-content: space-around; }
+      footer .datosFooter .icons__redes .fa-linkedin, footer .datosFooter .icons__redes .fa-facebook, footer .datosFooter .icons__redes .fa-instagram {
+        font-size: 40px;
+        color: #b6a2a2; }
   @media only screen and (max-width: 950px) {
     footer .datosFooter, footer .fraseFooter, footer .linkFooter {
       padding: 5px;
@@ -156,12 +164,24 @@ footer {
     #footerIndex {
       flex-direction: column; } }
 
-.linkFooter {
-  color: #d4c0c0;
-  font-size: 1.6rem;
-  margin-left: 25px;
-  padding: 5px;
-  font-family: "Lexend Peta", sans-serif; }
+#footer__pages {
+  margin: 0 20% 0 20%;
+  padding: 20px 0 20px 0;
+  display: flex;
+  justify-content: space-evenly; }
+  #footer__pages p {
+    font-family: "Lexend Peta", sans-serif;
+    margin: 0;
+    padding: 5px; }
+  #footer__pages .linkFooter {
+    color: #d4c0c0;
+    text-decoration: none;
+    font-size: 1.6rem;
+    padding: 5px;
+    font-family: "Lexend Peta", sans-serif; }
+    #footer__pages .linkFooter:hover {
+      color: #fff;
+      text-shadow: 0 0 15px white, 0 0 30px white, 0 0 60px white; }
 
 h2 {
   font-family: "Lexend Peta", sans-serif;
@@ -247,10 +267,10 @@ main p {
 .parteIndexDos {
   width: 80%;
   padding: 7% 1.3rem 5% 1.3rem;
-  background: linear-gradient(to right, rgba(240, 233, 233, 0.936), rgba(179, 215, 215, 0.936));
-  align-items: center; }
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.852), rgba(0, 0, 0, 0.415));
+  align-items: center;
+  border-radius: 5px; }
   .parteIndexDos .tituloEstudio {
-    color: #0a0909;
     text-shadow: 2px 2px #d49a9a; }
   .parteIndexDos .anim-typewriter {
     overflow: hidden;
@@ -269,7 +289,7 @@ main p {
   to {
     width: 100%; } }
   .parteIndexDos .parrafoPrincipal {
-    color: #0a0909;
+    color: #d4c0c0;
     font-size: 2.5rem;
     text-decoration: solid;
     line-height: 30px;
@@ -449,44 +469,6 @@ main form {
       .serviciosTres .descripcionServicios {
         font-size: 1.5rem; } }
 
-.tabla {
-  padding: 30px;
-  border-collapse: collapse;
-  font-family: "Belgrano", serif;
-  font-size: 1.5rem;
-  color: #0a0909;
-  background-image: linear-gradient(to right, rgba(240, 233, 233, 0.936), rgba(179, 215, 215, 0.936));
-  flex-direction: column; }
-  @media only screen and (max-widht: 950px) {
-    .tabla {
-      font-size: 1rem; } }
-  .tabla caption {
-    color: #0a0909;
-    letter-spacing: 2px;
-    padding: 10px;
-    font-weight: 600;
-    font-family: "Belgrano", serif;
-    text-decoration: underline;
-    text-align: center;
-    font-size: 3rem; }
-    @media only screen and (max-widht: 950px) {
-      .tabla caption {
-        font-size: 1rem; } }
-  .tabla th {
-    padding: 10px;
-    border: 1px solid black; }
-  .tabla tr {
-    padding: 10px;
-    border: 1px solid black; }
-  .tabla td {
-    padding: 10px;
-    border: 1px solid black; }
-
-.aclaracionTabla {
-  color: #d4c0c0;
-  font-size: 1rem;
-  margin-left: 15px; }
-
 .descripcionQuienesSomos {
   padding: 30px;
   display: flex;
@@ -525,10 +507,9 @@ main form {
         text-align: center;
         font-size: 1.5rem; } }
   .pablito .fotoPablo {
-    background-image: linear-gradient(to right, rgba(240, 233, 233, 0.936), rgba(179, 215, 215, 0.936));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.852), rgba(0, 0, 0, 0.415));
     padding: 30px;
     grid-area: fotoPablo;
-    overflow: hidden;
     box-shadow: 0 5px 15px 0px rgba(22, 22, 22, 0.6); }
     @media only screen and (max-width: 950px) {
       .pablito .fotoPablo {
@@ -541,17 +522,6 @@ main form {
         width: 100%;
         display: flex;
         justify-content: center; } }
-
-@keyframes float {
-  0% {
-    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
-    transform: translatey(0px); }
-  50% {
-    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0);
-    transform: translatey(-50px); }
-  100% {
-    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
-    transform: translatey(0px); } }
   .pablito .descripcionPablo {
     grid-area: parrafoPablo; }
     .pablito .descripcionPablo .parrafoQuienesSomos {
@@ -577,7 +547,7 @@ main form {
       display: flex;
       flex-direction: column; } }
   .migue .fotoMigue {
-    background-image: linear-gradient(to right, rgba(240, 233, 233, 0.936), rgba(179, 215, 215, 0.936));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.852), rgba(0, 0, 0, 0.415));
     grid-area: fotoMigue;
     padding: 30px; }
     @media only screen and (max-width: 950px) {

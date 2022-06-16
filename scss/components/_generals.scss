@@ -83,12 +83,16 @@ header{
     @media only screen and (max-width: 950px){
         background: $bg;
         text-align: $align-center;
-        background: transparent;
+        background: rgba(0, 0, 0, 0.415);
+        border-radius: 10px;
+        height: 11vh;
+        align-items: $align-center;
     }
     @media only screen and (max-width: 480px){
         flex-direction: column;
-        background: black;
+        background: rgba(0, 0, 0, 0.852);
         padding: 40px;
+        height: 100%;
     }
 }
 .barra{
@@ -120,16 +124,11 @@ header{
 }
 footer{
     padding: 15px;
-    .fraseFooter{
-        margin-left: 15px;
-        display: flex;
-        align-items: flex-start;
-    }
     .fa-registered{
         padding: 5px;
     }
     .iframeMapa{
-        margin-left: 100px;
+        margin-left: 22vh;
         display:flex;
         justify-content: center;
         width: 300px;
@@ -137,7 +136,7 @@ footer{
         @media only screen and (max-width: 950px){
             width: 150px;
             height: 112px;
-            margin: 0 auto;
+            margin: 0 auto !important;
         }
     }
     .datosFooter{
@@ -148,11 +147,21 @@ footer{
         margin-right: 15px;
         display: flex;
         justify-content: flex-end;
+        flex-direction: column;
         .listaFooter{
             list-style: none;
             .fa-location-dot, .fa-phone, .fa-envelope{
                 margin-right: 20px;
             }
+        }
+        .icons__redes{
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            .fa-linkedin, .fa-facebook, .fa-instagram{
+                font-size: 40px;
+                color: $txt-titulos;
+            }            
         }
     }
     @media only screen and (max-width: 950px){
@@ -172,14 +181,30 @@ footer{
         flex-direction: column;
     }
 }
-
-.linkFooter{
-    color: $txtcl;
-    font-size: 1.6rem;
-    margin-left: 25px;
-    padding: 5px;
-    font-family: $font-one;
-} 
+#footer__pages{
+    margin: 0 20% 0 20%;
+    padding: 20px 0 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    p {
+        font-family: $font-one;
+        margin: 0;
+        padding: 5px;
+    }
+    .linkFooter{
+        color: $txtcl;
+        text-decoration: none;
+        font-size: 1.6rem;
+        padding: 5px;
+        font-family: $font-one;
+        &:hover{
+            color: $txt-white;
+            text-shadow: 0 0 15px white,
+            0 0 30px white,
+            0 0 60px white;
+        }
+    } 
+}
 
 h2{
     @include titulos($font-one, $underline,$align-center, 'false');

@@ -41,8 +41,8 @@
     padding: 7% 1.3rem 5% 1.3rem;
     background: $bg-index;
     align-items: center;
+    border-radius: 5px;
     .tituloEstudio{
-        color: $txt-index;
         text-shadow: 2px 2px $shadow-txt;
     }
     .anim-typewriter{
@@ -63,7 +63,7 @@
         to { width: 100% }
       }
       .parrafoPrincipal{
-        color: $txt-index;
+        color: $txtcl;
         font-size: 2.5rem;
         text-decoration:solid;
         line-height: map-get($styles, line_height);
