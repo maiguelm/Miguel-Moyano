@@ -189,6 +189,7 @@ footer{
     background: $bg-footer;
     display: flex;
     justify-content: space-evenly;
+    align-items: $align-center;
     p {
         font-family: $font-one;
         font-size: 1.6rem;

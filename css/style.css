@@ -171,7 +171,8 @@ footer {
   padding: 20px 0 20px 0;
   background: linear-gradient(to right, #293232f8, #3D4646f8);
   display: flex;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  align-items: center; }
   #footer__pages p {
     font-family: "Lexend Peta", sans-serif;
     font-size: 1.6rem;
