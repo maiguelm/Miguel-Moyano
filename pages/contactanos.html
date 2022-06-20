@@ -22,7 +22,7 @@
 
 <body>
     <header>
-        <img class="logoEstudio" src="../images/logoabogadosresize.png" alt="Logo G.D. & M, abogados">
+        <a href="../index.html"><img class="logoEstudio" src="../images/logoabogadosresize.png" alt="Logo G.D. & M, abogados"></a>
         <nav class="barraDeNavegacion">
             <ul class="linksDerecha">
                 <li><a href="../index.html">Home</a></li>
@@ -55,26 +55,27 @@
     <main>
         <h2>Contactanos</h2>    
         <p>Para cualquier conuslta, llene el siguiente formulario y nos comunicaremos con Usted:</p>
-
-        <form action="../index.html" method="post">
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Introduzca su nombre">
-            </div>
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Correo electrónico</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="sucorreo@sucorreo.com.ar">
-            </div>
-            <div class="mb-3">
-                <label for="number_phone" class="form-label">Número de Telefóno</label>
-                <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Introduzca su número de teléfono">
-            </div>
-            <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Deje su mensaje aquí"></textarea>
-            </div>
-            <li class="button"><button type="submit">Enviar</button></li>
-        </form>
+        <div class="form__margin">
+            <form action="../index.html" method="post">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label label__margin">Nombre</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Introduzca su nombre">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="sucorreo@sucorreo.com.ar">
+                </div>
+                <div class="mb-3">
+                    <label for="number_phone" class="form-label">Número de Telefóno</label>
+                    <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Introduzca su número de teléfono">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Deje su mensaje aquí"></textarea>
+                </div>
+                <li class="button"><button type="submit">Enviar</button></li>
+            </form>
+        </div>
     </main>
     <footer id="footerIndex">
         <p><i class="fas fa-registered"></i>Todos los derechos reservados</p>

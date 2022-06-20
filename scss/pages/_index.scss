@@ -44,6 +44,7 @@
     border-radius: 5px;
     .tituloEstudio{
         text-shadow: 2px 2px $shadow-txt;
+        font-weight: 700;
     }
     .anim-typewriter{
         overflow: hidden; 
@@ -71,9 +72,10 @@
         padding: 75px;
         @media only screen and (max-width: 950px) {
             font-size: 2rem;
+            padding: 25px;
         }
         @media only screen and (max-width: 480px) {
-            font-size: 1.8rem;
+            font-size: 1.6rem;
         }
     }
     @media only screen and (max-widht: 950px){
@@ -96,6 +98,8 @@
 }
 .galeria__posicion{
     @extend %dpflex;
+    margin-bottom: $margin-bottom;
+    overflow: hidden;
     .carousel__fotos {
         transition: transform .8s cubic-bezier(0, 0.98, 1, 1);
         .galeriaClientes{

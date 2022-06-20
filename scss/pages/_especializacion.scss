@@ -43,12 +43,13 @@
 .linksInteres{
     list-style: none;
     @extend %dpflex;
-    @media only screen and (max-widht:480px) {
+    @media only screen and (max-width:480px) {
         flex-direction: column;
         align-items: center;
         }
     .enlacesInteres{
         font-family: $font-four;
+        text-decoration: none;
         font-size: 1.5rem;;
         color: $txtcl;
         padding: 0 20px;

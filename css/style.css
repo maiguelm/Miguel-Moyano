@@ -120,7 +120,7 @@ footer {
   footer .fa-registered {
     padding: 5px; }
   footer .iframeMapa {
-    margin-left: 22vh;
+    margin-left: 17vh;
     display: flex;
     justify-content: center;
     width: 300px;
@@ -154,31 +154,42 @@ footer {
     footer .datosFooter, footer .fraseFooter, footer .linkFooter {
       padding: 5px;
       font-size: 1rem;
-      margin: 0 auto; } }
+      margin: 0 auto;
+      text-align: center; } }
 
 #footerIndex {
   display: flex;
   align-items: center;
-  justify-content: space-between; }
+  justify-content: space-between;
+  background: linear-gradient(to right, #293232f8, #3D4646f8); }
   @media only screen and (max-width: 950px) {
     #footerIndex {
       flex-direction: column; } }
 
 #footer__pages {
-  margin: 0 20% 0 20%;
+  min-height: 20vh;
   padding: 20px 0 20px 0;
+  background: linear-gradient(to right, #293232f8, #3D4646f8);
   display: flex;
   justify-content: space-evenly; }
   #footer__pages p {
     font-family: "Lexend Peta", sans-serif;
+    font-size: 1.6rem;
     margin: 0;
     padding: 5px; }
+    @media screen and (max-width: 480px) {
+      #footer__pages p {
+        font-size: 1rem;
+        text-align: center; } }
   #footer__pages .linkFooter {
     color: #d4c0c0;
     text-decoration: none;
     font-size: 1.6rem;
     padding: 5px;
     font-family: "Lexend Peta", sans-serif; }
+    @media screen and (max-width: 480px) {
+      #footer__pages .linkFooter {
+        font-size: 1rem; } }
     #footer__pages .linkFooter:hover {
       color: #fff;
       text-shadow: 0 0 15px white, 0 0 30px white, 0 0 60px white; }
@@ -190,7 +201,7 @@ h2 {
   font-size: 3rem;
   color: #d4c0c0;
   font-weight: 500;
-  text-shadow: 1px 1px #d49a9a;
+  text-shadow: 1px 1px #ca4e4e;
   padding: 15px;
   width: auto; }
   @media only screen and (max-width: 1014px) {
@@ -205,13 +216,13 @@ h2 {
       height: 60%; } }
 
 p {
-  font-size: 1.6rem;
+  font-size: clamp(1.6rem, 2rem, 2.5rem);
   text-align: justify;
   font-family: "Kaushan Script", serif;
   color: #d4c0c0; }
 
 h3 {
-  font-family: "Lilita One", serif;
+  font-family: "Lexend Peta", sans-serif;
   font-weight: 600;
   font-size: 3rem;
   text-decoration: double underline;
@@ -271,7 +282,8 @@ main p {
   align-items: center;
   border-radius: 5px; }
   .parteIndexDos .tituloEstudio {
-    text-shadow: 2px 2px #d49a9a; }
+    text-shadow: 2px 2px #ca4e4e;
+    font-weight: 700; }
   .parteIndexDos .anim-typewriter {
     overflow: hidden;
     white-space: nowrap;
@@ -297,10 +309,11 @@ main p {
     padding: 75px; }
     @media only screen and (max-width: 950px) {
       .parteIndexDos .parrafoPrincipal {
-        font-size: 2rem; } }
+        font-size: 2rem;
+        padding: 25px; } }
     @media only screen and (max-width: 480px) {
       .parteIndexDos .parrafoPrincipal {
-        font-size: 1.8rem; } }
+        font-size: 1.6rem; } }
   @media only screen and (max-widht: 950px) {
     .parteIndexDos {
       display: flex;
@@ -310,73 +323,85 @@ main p {
   padding: 2vh; }
   .parrafo__color .segundoParrafo {
     color: #d4c0c0;
-    font-size: 2rem;
+    font-size: 2.5rem;
     padding: 25px;
     text-align: center; }
     @media only screen and (max-width: 480px) {
       .parrafo__color .segundoParrafo {
         font-size: 1.6rem; } }
 
-.galeria__posicion .carousel__fotos {
-  transition: transform 0.8s cubic-bezier(0, 0.98, 1, 1); }
-  .galeria__posicion .carousel__fotos .galeriaClientes {
-    margin: 0 auto;
-    filter: drop-shadow(2px 2px #000); }
-    @media only screen and (max-width: 950px) {
-      .galeria__posicion .carousel__fotos .galeriaClientes {
-        width: 50%; } }
-    @media only screen and (max-width: 480px) {
-      .galeria__posicion .carousel__fotos .galeriaClientes {
-        display: flex;
-        flex-direction: column;
-        padding: 10px; } }
+.galeria__posicion {
+  margin-bottom: 20px;
+  overflow: hidden; }
+  .galeria__posicion .carousel__fotos {
+    transition: transform 0.8s cubic-bezier(0, 0.98, 1, 1); }
+    .galeria__posicion .carousel__fotos .galeriaClientes {
+      margin: 0 auto;
+      filter: drop-shadow(2px 2px #000); }
+      @media only screen and (max-width: 950px) {
+        .galeria__posicion .carousel__fotos .galeriaClientes {
+          width: 50%; } }
+      @media only screen and (max-width: 480px) {
+        .galeria__posicion .carousel__fotos .galeriaClientes {
+          display: flex;
+          flex-direction: column;
+          padding: 10px; } }
 
-main form {
-  margin: 0 auto;
-  width: 400px;
-  padding: 1em;
-  border: 2px solid black;
-  border-radius: 1em; }
-  @media only screen and (max-width: 950px) {
-    main form {
-      width: 250px; } }
-  main form label {
-    display: inline-block;
-    width: 90%;
-    text-align: center;
-    font-family: "Lilita One", serif;
-    font-size: 1.8em; }
-    @media only screen and (max-width: 950px) {
-      main form label {
-        font-size: 1.4em !important; } }
-  main form input, main form textarea {
-    font: 1.8em sans-serif !important;
-    width: 100%;
-    box-sizing: border-box;
-    border: 1px solid #999; }
-    @media only screen and (max-width: 950px) {
-      main form input, main form textarea {
-        font-size: 1.4em !important; } }
-  main form button {
-    width: 100%;
+main .form__margin {
+  margin-bottom: 20px; }
+  main .form__margin form {
     margin: 0 auto;
-    font-family: 'Lilita One', serif;
-    font-size: 1.5em; }
-    main form button:hover {
-      background-color: #000;
-      color: #fff; }
-    main form button:focus {
-      background-color: #6e4444;
-      color: #b9a0a0; }
-    main form button li {
-      list-style: none; }
+    width: 400px;
+    padding: 1em;
+    border: 2px solid black;
+    border-radius: 1em; }
+    @media only screen and (max-width: 950px) {
+      main .form__margin form {
+        width: 250px; } }
+    main .form__margin form label {
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      font-family: "Lilita One", serif;
+      font-size: 1.8em;
+      color: #d4c0c0; }
+      @media only screen and (max-width: 950px) {
+        main .form__margin form label {
+          font-size: 1.4em !important; } }
+    main .form__margin form input, main .form__margin form textarea {
+      font: 1.8em sans-serif !important;
+      width: 100%;
+      box-sizing: border-box;
+      border: 1px solid #999; }
+      @media only screen and (max-width: 950px) {
+        main .form__margin form input, main .form__margin form textarea {
+          font-size: 1.4em !important; } }
+    main .form__margin form button {
+      width: 100%;
+      margin: 0 auto;
+      font-family: 'Lilita One', serif;
+      font-size: 1.5em; }
+      main .form__margin form button:hover {
+        background-color: #000;
+        color: #fff; }
+      main .form__margin form button:focus {
+        background-color: #6e4444;
+        color: #b9a0a0; }
+      main .form__margin form button li {
+        list-style: none; }
+
+.cambio__parrafo {
+  margin: 0 15% 0 15%; }
 
 .parrafoClientes {
   margin-top: 10vh;
   margin-bottom: 5vh;
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-align: center;
   padding: 20px; }
+  @media screen and (max-width: 480px) {
+    .parrafoClientes {
+      font-size: 1.6rem; } }
 
 .argento, .bajoCero {
   height: 70%; }
@@ -421,12 +446,13 @@ main form {
 
 .linksInteres {
   list-style: none; }
-  @media only screen and (max-widht: 480px) {
+  @media only screen and (max-width: 480px) {
     .linksInteres {
       flex-direction: column;
       align-items: center; } }
   .linksInteres .enlacesInteres {
     font-family: "Belgrano", serif;
+    text-decoration: none;
     font-size: 1.5rem;
     color: #d4c0c0;
     padding: 0 20px; }
@@ -438,12 +464,21 @@ main form {
   display: flex;
   align-items: center;
   justify-content: space-around; }
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 950px) {
     .serviciosUno #hammerScreen, .serviciosUno .screenHammer, .serviciosDos #hammerScreen, .serviciosDos .screenHammer {
-      width: 70%; } }
+      width: 60%; } }
+  @media only screen and (max-width: 580px) {
+    .serviciosUno #hammerScreen, .serviciosUno .screenHammer, .serviciosDos #hammerScreen, .serviciosDos .screenHammer {
+      width: 50%; } }
   .serviciosUno p, .serviciosDos p {
     border: 5px solid #111010;
     box-shadow: 0 5px 10px #262729; }
+
+.serviciosUno p {
+  margin: 0 5% 0 5%; }
+  @media only screen and (max-width: 950px) {
+    .serviciosUno p {
+      margin: 0; } }
 
 @media only screen and (max-width: 480px) {
   .serviciosUno {
@@ -455,19 +490,20 @@ main form {
     flex-direction: column-reverse; } }
 
 .serviciosTres {
-  margin-left: 25px;
-  margin-right: 25px; }
+  margin-left: 15vh;
+  margin-right: 15vh; }
   .serviciosTres p {
     margin-top: 20px;
     border: 5px solid #111010;
     box-shadow: 0 5px 10px #262729; }
-  .serviciosTres .descripcionServicios {
-    padding: 20px;
-    font-size: 2rem;
-    text-align: center; }
-    @media only screen and (max-widht: 950px) {
-      .serviciosTres .descripcionServicios {
-        font-size: 1.5rem; } }
+
+.descripcionServicios {
+  padding: 20px;
+  font-size: 2rem;
+  text-align: center; }
+  @media only screen and (max-widht: 950px) {
+    .descripcionServicios {
+      font-size: 1.6rem; } }
 
 .descripcionQuienesSomos {
   padding: 30px;
@@ -497,15 +533,20 @@ main form {
       flex-direction: column; } }
   .pablito .tituloPablo {
     grid-area: titulo;
-    color: #b6a2a2; }
+    color: #b6a2a2;
+    letter-spacing: -.5rem;
+    position: relative;
+    top: 50px; }
     @media only screen and (max-width: 950px) {
       .pablito .tituloPablo {
         font-size: 2rem;
-        padding: 17px; } }
+        padding: 17px;
+        position: unset; } }
     @media only screen and (max-width: 480px) {
       .pablito .tituloPablo {
         text-align: center;
-        font-size: 1.5rem; } }
+        font-size: 1.5rem;
+        letter-spacing: 0; } }
   .pablito .fotoPablo {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.852), rgba(0, 0, 0, 0.415));
     padding: 30px;
@@ -537,6 +578,7 @@ main form {
           padding: 17px; } }
 
 .migue {
+  margin-bottom: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 25% 75%;
@@ -563,15 +605,20 @@ main form {
         justify-content: center; } }
   .migue .tituloMigue {
     grid-area: titulo;
-    color: #b6a2a2; }
+    color: #b6a2a2;
+    letter-spacing: -.5rem;
+    position: relative;
+    top: 100px; }
     @media only screen and (max-width: 950px) {
       .migue .tituloMigue {
         font-size: 2rem;
-        padding: 17px; } }
+        padding: 17px;
+        position: unset; } }
     @media only screen and (max-width: 480px) {
       .migue .tituloMigue {
         text-align: center;
-        font-size: 1.5rem; } }
+        font-size: 1.5rem;
+        letter-spacing: 0; } }
   .migue .descripcionMigue {
     grid-area: parrafoMigue; }
     .migue .descripcionMigue .parrafoQuienesSomos {

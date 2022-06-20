@@ -30,13 +30,18 @@
     .tituloPablo{
         grid-area: titulo;
         color: $txt-titulos;
+        letter-spacing: -.5rem;
+        position: relative;
+        top: 50px;
         @media only screen and (max-width: 950px){
             font-size: 2rem;
             padding: 17px;
+            position: unset;
         }
         @media only screen and (max-width: 480px) {
             text-align: center;
             font-size: 1.5rem;
+            letter-spacing: 0;
           }
     }
     .fotoPablo{
@@ -74,6 +79,7 @@
 }
 
 .migue{
+    margin-bottom: $margin-bottom;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 25% 75%;
@@ -104,13 +110,18 @@
     .tituloMigue{
         grid-area: titulo;
         color: $txt-titulos;
+        letter-spacing: -.5rem;
+        position: relative;
+        top: 100px;
         @media only screen and (max-width: 950px){
             font-size: 2rem;
             padding: 17px;
+            position:unset;
         }
         @media only screen and (max-width: 480px) {
             text-align: center;
             font-size: 1.5rem;
+            letter-spacing: 0;
           }
     }
     .descripcionMigue{

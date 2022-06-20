@@ -1,47 +1,51 @@
 main{
-     form {
-        margin: 0 auto;
-        width: 400px;
-        padding: 1em;
-        border: 2px solid black;
-        border-radius: 1em;
-        @media only screen and (max-width: 950px){
-            width: 250px;
-        }
-        label {
-            display: inline-block;
-            width: 90%;
-            text-align: center;
-            font-family: $font-three;
-            font-size: 1.8em;
-            @media only screen and (max-width: 950px){
-                font-size: 1.4em !important;
-            }
-        }
-        input, textarea {
-            font: 1.8em sans-serif !important;
-            width: 100%;
-            box-sizing: border-box;
-            border: 1px solid #999;
-            @media only screen and (max-width: 950px){
-                font-size: 1.4em !important;
-            }
-        }
-        button {
-            width: 100%;
+    .form__margin{
+        margin-bottom: $margin-bottom;
+        form {
             margin: 0 auto;
-            font-family: 'Lilita One', serif;
-            font-size: 1.5em;
-            &:hover{
-                background-color: #000;
-                color: $txt-white;
+            width: 400px;
+            padding: 1em;
+            border: 2px solid black;
+            border-radius: 1em;
+            @media only screen and (max-width: 950px){
+                width: 250px;
             }
-            &:focus{
-                background-color: rgb(110, 68, 68);
-                color: rgb(185, 160, 160);
+            label {
+                display: inline-block;
+                width: 100%;
+                text-align: center;
+                font-family: $font-three;
+                font-size: 1.8em;
+                color: $txtcl;
+                @media only screen and (max-width: 950px){
+                    font-size: 1.4em !important;
+                }
+            }        
+            input, textarea {
+                font: 1.8em sans-serif !important;
+                width: 100%;
+                box-sizing: border-box;
+                border: 1px solid #999;
+                @media only screen and (max-width: 950px){
+                    font-size: 1.4em !important;
+                }
             }
-            li{
-                list-style: none;
+            button {
+                width: 100%;
+                margin: 0 auto;
+                font-family: 'Lilita One', serif;
+                font-size: 1.5em;
+                &:hover{
+                    background-color: #000;
+                    color: $txt-white;
+                }
+                &:focus{
+                    background-color: rgb(110, 68, 68);
+                    color: rgb(185, 160, 160);
+                }
+                li{
+                    list-style: none;
+                }
             }
         }
     }

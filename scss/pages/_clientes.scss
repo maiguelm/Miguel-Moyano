@@ -1,9 +1,15 @@
+.cambio__parrafo{
+  margin: 0 15% 0 15%;
+}
 .parrafoClientes{
     margin-top: 10vh; 
     margin-bottom: 5vh;
     font-size: map-get($styles, ft-size);
     text-align: map-get($styles, txt-aligns);
     padding: 20px;
+    @media screen and(max-width: 480px) {
+      font-size: 1.6rem;
+    }
 }
 .argento, .bajoCero{
     height: 70%;

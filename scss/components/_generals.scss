@@ -128,7 +128,7 @@ footer{
         padding: 5px;
     }
     .iframeMapa{
-        margin-left: 22vh;
+        margin-left: 17vh;
         display:flex;
         justify-content: center;
         width: 300px;
@@ -169,6 +169,7 @@ footer{
             padding: 5px;
             font-size: 1rem;
             margin: 0 auto;
+            text-align: center;
            }
     }
 
@@ -177,19 +178,26 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background: $bg-footer;
     @media only screen and (max-width: 950px){
         flex-direction: column;
     }
 }
 #footer__pages{
-    margin: 0 20% 0 20%;
+    min-height: 20vh;
     padding: 20px 0 20px 0;
+    background: $bg-footer;
     display: flex;
     justify-content: space-evenly;
     p {
         font-family: $font-one;
+        font-size: 1.6rem;
         margin: 0;
         padding: 5px;
+        @media screen and (max-width: 480px) {
+            font-size: 1rem;
+            text-align: center;
+        }
     }
     .linkFooter{
         color: $txtcl;
@@ -197,6 +205,9 @@ footer{
         font-size: 1.6rem;
         padding: 5px;
         font-family: $font-one;
+        @media screen and (max-width: 480px) {
+            font-size: 1rem;
+        }
         &:hover{
             color: $txt-white;
             text-shadow: 0 0 15px white,
@@ -226,14 +237,14 @@ h2{
 }
 
 p{
-    font-size: 1.6rem;
+    font-size: clamp(1.6rem, 2rem, 2.5rem);
     text-align: justify;
     font-family: $font-two;
     color: $txtcl;
 }
 
 h3{
-    font-family: $font-three;
+    font-family: $font-one;
     font-weight: 600;
     font-size: 3rem;
     text-decoration: double underline;

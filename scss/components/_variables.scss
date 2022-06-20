@@ -3,7 +3,7 @@ $txtcl: #d4c0c0;
 $txtcl-two: #f29;
 $txt-white: #fff;
 $txt-titulos: #b6a2a2;
-$shadow-txt: #d49a9a;
+$shadow-txt: #ca4e4e;
 $txt-index: #0a0909;
 
 //Fonts-Familys y letras
@@ -18,7 +18,9 @@ $align-center: center;
 //Background
 $bg: linear-gradient(to right, #4b0505f8, #682323f8);
 $bg-index: linear-gradient(to right, rgba(0, 0, 0, 0.852), rgba(0, 0, 0, 0.415));
+$bg-footer: linear-gradient(to right, #293232f8, #3D4646f8);
 
+$margin-bottom: 20px;
 
 //general
 
@@ -48,7 +50,7 @@ $styles:(
     pd-general: 25px,
     txt-aligns: center,
     line_height: 30px,
-    ft-size: 2rem,
+    ft-size: 2.5rem,
 );
 
 
