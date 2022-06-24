@@ -84,17 +84,22 @@
 
 .parrafo__color{
     padding: 2vh;
-    display: grid;
-    grid-template-columns: 55% 15% 30%;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: 
-    "parrUno parrUno ."
-    ". parrDos parrDos";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    // grid-template-columns: 55% 15% 30%;
+    // grid-template-rows: repeat(2, 1fr);
+    // grid-template-areas: 
+    // "parrUno parrUno ."
+    // ". parrDos parrDos";
     .parr__uno{
-        grid-area: parrUno;
+        // grid-area: parrUno;
+        width: 75%;
     }
     .parr__dos{
-        grid-area: parrDos;
+        // grid-area: parrDos;
+        width: 40%;
     }
     .segundoParrafo {
         color: $txtcl;

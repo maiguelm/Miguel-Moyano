@@ -117,7 +117,7 @@ header {
       font-size: 40px; } }
 
 footer {
-  padding: 0 15px 0 15px;
+  padding: 15px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -131,6 +131,7 @@ footer {
   footer .fa-registered {
     padding: 5px; }
   footer .iframeMapa {
+    margin-top: 1rem;
     display: flex;
     justify-content: center;
     width: 300px;
@@ -292,14 +293,13 @@ main p {
 
 .parrafo__color {
   padding: 2vh;
-  display: grid;
-  grid-template-columns: 55% 15% 30%;
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-areas: "parrUno parrUno ." ". parrDos parrDos"; }
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
   .parrafo__color .parr__uno {
-    grid-area: parrUno; }
+    width: 75%; }
   .parrafo__color .parr__dos {
-    grid-area: parrDos; }
+    width: 40%; }
   .parrafo__color .segundoParrafo {
     color: #d4c0c0;
     font-size: 2.5rem;
@@ -327,7 +327,7 @@ main p {
           padding: 10px; } }
 
 main .form__margin {
-  padding-bottom: 20px;
+  padding: 10px;
   display: flex; }
   main .form__margin form {
     margin: 0 auto;
