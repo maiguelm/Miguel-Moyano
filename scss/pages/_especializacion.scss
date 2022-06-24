@@ -10,6 +10,9 @@
         @media only screen and (max-width: 950px){
             font-size: 1.5rem;
         }
+        @media only screen and (max-width: 480px){
+            flex-basis: 25vh;
+        }
     }
     h3{
         text-align: center;
@@ -18,22 +21,28 @@
         @media only screen and (max-width: 950px){
             font-size: 2rem;
         }
+        @media only screen and (max-width: 480px){
+            flex-basis: 25vh;
+            margin-top: 15px;
+        }
     }
     .derechoLaboral, .derechoDaños,.derechoSalud, .derechoCivil{
         display: flex;
         align-items: center;
         justify-content: space-around;
-        @media only screen and (max-widht480px){
+        @media only screen and (max-width: 480px){
             flex-direction: column;
         }
     }
     .derechoDaños, .derechoCivil{
         flex-direction: row-reverse;
+        @media only screen and (max-width: 480px){
+            flex-direction: column;
+        }
     }
     .derechoLaboral{
         margin-top: 20px;
     }
-    
 }
 .parrafoEnlacesinteres{
     padding: 15px 0;
@@ -54,4 +63,27 @@
         color: $txtcl;
         padding: 0 20px;
     }
+}
+
+.waveContainer{
+   height: 400px;
+   position: relative;
+   .img__wallpaper, .img__wallpaperdos, .img__wallpapertres{
+       width: 100%;
+       height: 70%;
+       background-image: url(/images/mardelplatawallcomp-min.png);
+       background-position: center;
+       background-repeat:no-repeat;
+       background-size: cover;
+       background-attachment: fixed;
+   }
+   .img__wallpaperdos{
+    background-image: url(/images/mardelplatawalldos.jpg);
+}
+.img__wallpapertres{
+    background-image: url(/images/mardelplatawalltres.jpg);
+}
+   @media only screen and (max-width:480px) {
+       display:none;
+   }
 }

@@ -1,6 +1,7 @@
 main{
     .form__margin{
-        margin-bottom: $margin-bottom;
+        padding-bottom: $margin-bottom;
+        display: flex;
         form {
             margin: 0 auto;
             width: 400px;

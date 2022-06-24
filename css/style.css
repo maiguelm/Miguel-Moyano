@@ -100,10 +100,11 @@ header {
       position: absolute;
       right: 1rem;
       top: 1rem; } }
-  .barra .btn__nav {
-    color: #fff; }
-    .barra .btn__nav .btn__navflex {
-      justify-content: flex-end; }
+  .barra .btn__nav .btn__navflex {
+    justify-content: flex-end; }
+    .barra .btn__nav .btn__navflex .icon__hoover:hover {
+      color: #fff;
+      text-shadow: 0 0 15px white, 0 0 30px white, 0 0 60px white; }
 
 .fa-whatsapp-square {
   font-size: 50px;
@@ -113,14 +114,23 @@ header {
   color: #30cc30; }
   @media only screen and (max-width: 950px) {
     .fa-whatsapp-square {
-      font-size: 30px; } }
+      font-size: 40px; } }
 
 footer {
-  padding: 15px; }
+  padding: 0 15px 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to right, #293232f8, #3D4646f8); }
+  @media only screen and (max-width: 950px) {
+    footer {
+      flex-direction: column; } }
+  footer div .fraseFooter {
+    font-family: "Lexend Peta", sans-serif;
+    font-size: 1.5rem; }
   footer .fa-registered {
     padding: 5px; }
   footer .iframeMapa {
-    margin-left: 17vh;
     display: flex;
     justify-content: center;
     width: 300px;
@@ -153,47 +163,9 @@ footer {
   @media only screen and (max-width: 950px) {
     footer .datosFooter, footer .fraseFooter, footer .linkFooter {
       padding: 5px;
-      font-size: 1rem;
+      font-size: 1.6rem;
       margin: 0 auto;
       text-align: center; } }
-
-#footerIndex {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: linear-gradient(to right, #293232f8, #3D4646f8); }
-  @media only screen and (max-width: 950px) {
-    #footerIndex {
-      flex-direction: column; } }
-
-#footer__pages {
-  min-height: 20vh;
-  padding: 20px 0 20px 0;
-  background: linear-gradient(to right, #293232f8, #3D4646f8);
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center; }
-  #footer__pages p {
-    font-family: "Lexend Peta", sans-serif;
-    font-size: 1.6rem;
-    margin: 0;
-    padding: 5px; }
-    @media screen and (max-width: 480px) {
-      #footer__pages p {
-        font-size: 1rem;
-        text-align: center; } }
-  #footer__pages .linkFooter {
-    color: #d4c0c0;
-    text-decoration: none;
-    font-size: 1.6rem;
-    padding: 5px;
-    font-family: "Lexend Peta", sans-serif; }
-    @media screen and (max-width: 480px) {
-      #footer__pages .linkFooter {
-        font-size: 1rem; } }
-    #footer__pages .linkFooter:hover {
-      color: #fff;
-      text-shadow: 0 0 15px white, 0 0 30px white, 0 0 60px white; }
 
 h2 {
   font-family: "Lexend Peta", sans-serif;
@@ -219,7 +191,7 @@ h2 {
 p {
   font-size: clamp(1.6rem, 2rem, 2.5rem);
   text-align: justify;
-  font-family: "Kaushan Script", serif;
+  font-family: "Lato", sans-serif;
   color: #d4c0c0; }
 
 h3 {
@@ -242,9 +214,7 @@ main p {
 .tituloPosicion {
   position: relative; }
   .tituloPosicion .imagenJusticia {
-    display: inline-block;
-    width: 100%;
-    background-attachment: fixed; }
+    width: 100%; }
   .tituloPosicion #tituloIndex {
     font-family: "Lexend Peta", sans-serif;
     text-decoration: underline;
@@ -321,7 +291,15 @@ main p {
       flex-direction: column; } }
 
 .parrafo__color {
-  padding: 2vh; }
+  padding: 2vh;
+  display: grid;
+  grid-template-columns: 55% 15% 30%;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "parrUno parrUno ." ". parrDos parrDos"; }
+  .parrafo__color .parr__uno {
+    grid-area: parrUno; }
+  .parrafo__color .parr__dos {
+    grid-area: parrDos; }
   .parrafo__color .segundoParrafo {
     color: #d4c0c0;
     font-size: 2.5rem;
@@ -349,7 +327,8 @@ main p {
           padding: 10px; } }
 
 main .form__margin {
-  margin-bottom: 20px; }
+  padding-bottom: 20px;
+  display: flex; }
   main .form__margin form {
     margin: 0 auto;
     width: 400px;
@@ -418,6 +397,9 @@ main .form__margin {
   @media only screen and (max-width: 950px) {
     .especializacion p {
       font-size: 1.5rem; } }
+  @media only screen and (max-width: 480px) {
+    .especializacion p {
+      flex-basis: 25vh; } }
 
 .especializacion h3 {
   text-align: center;
@@ -426,17 +408,24 @@ main .form__margin {
   @media only screen and (max-width: 950px) {
     .especializacion h3 {
       font-size: 2rem; } }
+  @media only screen and (max-width: 480px) {
+    .especializacion h3 {
+      flex-basis: 25vh;
+      margin-top: 15px; } }
 
 .especializacion .derechoLaboral, .especializacion .derechoDaños, .especializacion .derechoSalud, .especializacion .derechoCivil {
   display: flex;
   align-items: center;
   justify-content: space-around; }
-  @media only screen and (max-widht480px) {
+  @media only screen and (max-width: 480px) {
     .especializacion .derechoLaboral, .especializacion .derechoDaños, .especializacion .derechoSalud, .especializacion .derechoCivil {
       flex-direction: column; } }
 
 .especializacion .derechoDaños, .especializacion .derechoCivil {
   flex-direction: row-reverse; }
+  @media only screen and (max-width: 480px) {
+    .especializacion .derechoDaños, .especializacion .derechoCivil {
+      flex-direction: column; } }
 
 .especializacion .derechoLaboral {
   margin-top: 20px; }
@@ -458,20 +447,53 @@ main .form__margin {
     color: #d4c0c0;
     padding: 0 20px; }
 
+.waveContainer {
+  height: 400px;
+  position: relative; }
+  .waveContainer .img__wallpaper, .waveContainer .img__wallpaperdos, .waveContainer .img__wallpapertres {
+    width: 100%;
+    height: 70%;
+    background-image: url(/images/mardelplatawallcomp-min.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; }
+  .waveContainer .img__wallpaperdos {
+    background-image: url(/images/mardelplatawalldos.jpg); }
+  .waveContainer .img__wallpapertres {
+    background-image: url(/images/mardelplatawalltres.jpg); }
+  @media only screen and (max-width: 480px) {
+    .waveContainer {
+      display: none; } }
+
 .tituloServicios {
   margin-bottom: 20px; }
 
-.serviciosUno, .serviciosDos {
+.serviciosUno,
+.serviciosDos {
+  margin: 2vh;
   display: flex;
   align-items: center;
   justify-content: space-around; }
-  @media only screen and (max-width: 950px) {
-    .serviciosUno #hammerScreen, .serviciosUno .screenHammer, .serviciosDos #hammerScreen, .serviciosDos .screenHammer {
-      width: 60%; } }
-  @media only screen and (max-width: 580px) {
-    .serviciosUno #hammerScreen, .serviciosUno .screenHammer, .serviciosDos #hammerScreen, .serviciosDos .screenHammer {
-      width: 50%; } }
-  .serviciosUno p, .serviciosDos p {
+  .serviciosUno .hammerScreen,
+  .serviciosUno .screenHammer,
+  .serviciosDos .hammerScreen,
+  .serviciosDos .screenHammer {
+    padding: 15px; }
+    @media only screen and (max-width: 950px) {
+      .serviciosUno .hammerScreen,
+      .serviciosUno .screenHammer,
+      .serviciosDos .hammerScreen,
+      .serviciosDos .screenHammer {
+        width: 60%; } }
+    @media only screen and (max-width: 580px) {
+      .serviciosUno .hammerScreen,
+      .serviciosUno .screenHammer,
+      .serviciosDos .hammerScreen,
+      .serviciosDos .screenHammer {
+        width: 50%; } }
+  .serviciosUno p,
+  .serviciosDos p {
     border: 5px solid #111010;
     box-shadow: 0 5px 10px #262729; }
 
@@ -491,18 +513,30 @@ main .form__margin {
     flex-direction: column-reverse; } }
 
 .serviciosTres {
+  display: grid;
+  grid-template-columns: 65% 35%;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "parrafouno ." ". parrafodos";
   margin-left: 15vh;
   margin-right: 15vh; }
   .serviciosTres p {
-    margin-top: 20px;
     border: 5px solid #111010;
     box-shadow: 0 5px 10px #262729; }
+  .serviciosTres .parr__uno {
+    grid-area: parrafouno; }
+  .serviciosTres .parr__dos {
+    grid-area: parrafodos; }
+  @media only screen and (max-width: 950px) {
+    .serviciosTres {
+      display: flex;
+      flex-direction: column;
+      padding: 20px; } }
 
 .descripcionServicios {
   padding: 20px;
   font-size: 2rem;
   text-align: center; }
-  @media only screen and (max-widht: 950px) {
+  @media only screen and (max-width: 950px) {
     .descripcionServicios {
       font-size: 1.6rem; } }
 

@@ -1,9 +1,7 @@
 .tituloPosicion{
     position:relative;
     .imagenJusticia{
-        display: inline-block;
         width: 100%;
-        background-attachment: fixed;
     }
     #tituloIndex{
         @include titulos($font-one, $underline, $align-center, 'true');
@@ -86,6 +84,18 @@
 
 .parrafo__color{
     padding: 2vh;
+    display: grid;
+    grid-template-columns: 55% 15% 30%;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "parrUno parrUno ."
+    ". parrDos parrDos";
+    .parr__uno{
+        grid-area: parrUno;
+    }
+    .parr__dos{
+        grid-area: parrDos;
+    }
     .segundoParrafo {
         color: $txtcl;
         font-size: map-get($styles, ft-size);

@@ -1,55 +1,90 @@
-.tituloServicios{
+.tituloServicios {
     margin-bottom: $margin-bottom;
-    
+
 }
-.serviciosUno, .serviciosDos{
+
+.serviciosUno,
+.serviciosDos {
+    margin: 2vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    #hammerScreen, .screenHammer{
+
+    .hammerScreen,
+    .screenHammer {
+        padding: 15px;
+
         @media only screen and (max-width: 950px) {
             width: 60%;
         }
+
         @media only screen and (max-width: 580px) {
             width: 50%;
         }
     }
-    p{
+
+    p {
         border: 5px solid #111010;
         box-shadow: 0 5px 10px rgb(38, 39, 41);
     }
 }
-.serviciosUno{
-    p{
+
+.serviciosUno {
+    p {
         margin: 0 5% 0 5%;
-        @media only screen and (max-width: 950px){
+
+        @media only screen and (max-width: 950px) {
             margin: 0;
         }
     }
-    @media only screen and (max-width: 480px){
+
+    @media only screen and (max-width: 480px) {
         flex-direction: column;
     }
-  }
-.serviciosDos{
-    @media only screen and (max-width: 480px){
+}
+
+.serviciosDos {
+    @media only screen and (max-width: 480px) {
         display: flex;
         flex-direction: column-reverse;
     }
-  }
-.serviciosTres{
-   margin-left: 15vh;
-   margin-right: 15vh;
-   p{
-    margin-top: 20px;
-    border: 5px solid #111010;
-    box-shadow: 0 5px 10px rgb(38, 39, 41);
-   }
 }
-.descripcionServicios{
+
+.serviciosTres {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "parrafouno ."
+        ". parrafodos";
+    margin-left: 15vh;
+    margin-right: 15vh;
+
+    p {
+        border: 5px solid #111010;
+        box-shadow: 0 5px 10px rgb(38, 39, 41);
+    }
+
+    .parr__uno {
+        grid-area: parrafouno;
+    }
+
+    .parr__dos {
+        grid-area: parrafodos;
+    }
+    @media only screen and (max-width: 950px) {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+}
+
+.descripcionServicios {
     padding: 20px;
     font-size: 2rem;
     text-align: center;
-    @media only screen and (max-widht: 950px) {
+    @media only screen and (max-width: 950px) {
         font-size: 1.6rem;
     }
+
 }
