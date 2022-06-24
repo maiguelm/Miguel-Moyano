@@ -27,6 +27,7 @@
         }
     }
     .derechoLaboral, .derechoDaños,.derechoSalud, .derechoCivil{
+        margin-bottom: 50px;
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -46,6 +47,7 @@
 }
 .parrafoEnlacesinteres{
     padding: 15px 0;
+    font-size: 2rem;
     text-decoration: underline;
 }
   
@@ -59,9 +61,22 @@
     .enlacesInteres{
         font-family: $font-four;
         text-decoration: none;
-        font-size: 1.5rem;;
+        font-size: 2rem;;
         color: $txtcl;
         padding: 0 20px;
+        transition: .5s linear;
+        &:hover{
+            color: $txt-white;
+            text-shadow: 0 0 15px white,
+            0 0 30px white,
+            0 0 60px white;
+        }
+        &:hover:nth-child(1){
+            margin-right: 5px;
+        }
+        &:hover:nth-child(2){
+            margin-right: 30px;
+        }
     }
 }
 
@@ -71,14 +86,14 @@
    .img__wallpaper, .img__wallpaperdos, .img__wallpapertres{
        width: 100%;
        height: 70%;
-       background-image: url(/images/mardelplatawallcomp-min.png);
+       background-image: url(/images/mardelbristol.jpg);
        background-position: center;
        background-repeat:no-repeat;
        background-size: cover;
        background-attachment: fixed;
    }
    .img__wallpaperdos{
-    background-image: url(/images/mardelplatawalldos.jpg);
+    background-image: url(/images/mardelwall.jpg);
 }
 .img__wallpapertres{
     background-image: url(/images/mardelplatawalltres.jpg);

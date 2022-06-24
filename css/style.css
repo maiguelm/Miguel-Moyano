@@ -70,6 +70,8 @@ header {
     font-weight: 300; }
     .linksDerecha a:hover {
       color: darkkhaki; }
+    .linksDerecha a:active {
+      color: black; }
     @media only screen and (max-width: 950px) {
       .linksDerecha a {
         font-size: 1.4rem;
@@ -414,6 +416,7 @@ main .form__margin {
       margin-top: 15px; } }
 
 .especializacion .derechoLaboral, .especializacion .derechoDaños, .especializacion .derechoSalud, .especializacion .derechoCivil {
+  margin-bottom: 50px;
   display: flex;
   align-items: center;
   justify-content: space-around; }
@@ -432,6 +435,7 @@ main .form__margin {
 
 .parrafoEnlacesinteres {
   padding: 15px 0;
+  font-size: 2rem;
   text-decoration: underline; }
 
 .linksInteres {
@@ -443,9 +447,17 @@ main .form__margin {
   .linksInteres .enlacesInteres {
     font-family: "Belgrano", serif;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #d4c0c0;
-    padding: 0 20px; }
+    padding: 0 20px;
+    transition: .5s linear; }
+    .linksInteres .enlacesInteres:hover {
+      color: #fff;
+      text-shadow: 0 0 15px white, 0 0 30px white, 0 0 60px white; }
+    .linksInteres .enlacesInteres:hover:nth-child(1) {
+      margin-right: 5px; }
+    .linksInteres .enlacesInteres:hover:nth-child(2) {
+      margin-right: 30px; }
 
 .waveContainer {
   height: 400px;
@@ -453,13 +465,13 @@ main .form__margin {
   .waveContainer .img__wallpaper, .waveContainer .img__wallpaperdos, .waveContainer .img__wallpapertres {
     width: 100%;
     height: 70%;
-    background-image: url(/images/mardelplatawallcomp-min.png);
+    background-image: url(/images/mardelbristol.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed; }
   .waveContainer .img__wallpaperdos {
-    background-image: url(/images/mardelplatawalldos.jpg); }
+    background-image: url(/images/mardelwall.jpg); }
   .waveContainer .img__wallpapertres {
     background-image: url(/images/mardelplatawalltres.jpg); }
   @media only screen and (max-width: 480px) {

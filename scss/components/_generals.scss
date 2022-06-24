@@ -72,6 +72,9 @@ header{
         &:hover{
             color: darkkhaki;
         }
+        &:active{
+            color: black;
+        }
         @media only screen and (max-width: 950px){
             font-size: 1.4rem;
             text-align: $align-center;
