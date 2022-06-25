@@ -53,6 +53,7 @@
   
 .linksInteres{
     list-style: none;
+    text-align: center;
     @extend %dpflex;
     @media only screen and (max-width:480px) {
         flex-direction: column;
@@ -94,11 +95,8 @@
    }
    .img__wallpaperdos{
     background-image: url(/images/mardelwall.jpg);
-}
-.img__wallpapertres{
+    }
+    .img__wallpapertres{
     background-image: url(/images/mardelplatawalltres.jpg);
-}
-   @media only screen and (max-width:480px) {
-       display:none;
-   }
+    }   
 }

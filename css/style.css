@@ -324,12 +324,12 @@ main p {
       filter: drop-shadow(2px 2px #000); }
       @media only screen and (max-width: 950px) {
         .galeria__posicion .carousel__fotos .galeriaClientes {
-          width: 50%; } }
+          max-height: 145px; } }
       @media only screen and (max-width: 480px) {
         .galeria__posicion .carousel__fotos .galeriaClientes {
-          display: flex;
           flex-direction: column;
-          padding: 10px; } }
+          padding: 10px;
+          max-height: 115px; } }
 
 main .form__margin {
   padding: 10px;
@@ -389,7 +389,7 @@ main .form__margin {
       font-size: 1.6rem; } }
 
 .argento, .bajoCero {
-  height: 70%; }
+  height: 114px; }
 
 #tituloEspecializacion {
   padding: 20px; }
@@ -442,7 +442,8 @@ main .form__margin {
   text-decoration: underline; }
 
 .linksInteres {
-  list-style: none; }
+  list-style: none;
+  text-align: center; }
   @media only screen and (max-width: 480px) {
     .linksInteres {
       flex-direction: column;
@@ -477,9 +478,6 @@ main .form__margin {
     background-image: url(/images/mardelwall.jpg); }
   .waveContainer .img__wallpapertres {
     background-image: url(/images/mardelplatawalltres.jpg); }
-  @media only screen and (max-width: 480px) {
-    .waveContainer {
-      display: none; } }
 
 .tituloServicios {
   margin-bottom: 20px; }
@@ -693,7 +691,7 @@ main .form__margin {
 @media only screen and (max-width: 480px) {
   .fotitodos {
     height: 143px;
-    width: 83px;
+    width: 114px;
     border: none;
     padding: 0; } }
 
