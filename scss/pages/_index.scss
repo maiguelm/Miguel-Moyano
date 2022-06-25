@@ -92,6 +92,9 @@
     }
     .parr__dos{
         width: 40%;
+        @media only screen and (max-width: 950px){
+            width: 75%;
+        }
     }
     .segundoParrafo {
         color: $txtcl;

@@ -302,6 +302,9 @@ main p {
     width: 75%; }
   .parrafo__color .parr__dos {
     width: 40%; }
+    @media only screen and (max-width: 950px) {
+      .parrafo__color .parr__dos {
+        width: 75%; } }
   .parrafo__color .segundoParrafo {
     color: #d4c0c0;
     font-size: 2.5rem;
