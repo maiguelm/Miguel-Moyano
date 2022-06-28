@@ -89,7 +89,8 @@ header {
       height: 100%; } }
 
 .barra {
-  display: none; }
+  display: none;
+  z-index: 1000; }
   @media only screen and (max-width: 950px) {
     .barra {
       display: inline-block;
@@ -412,8 +413,8 @@ main .form__margin {
 
 .especializacion p {
   padding: 20px;
-  font-size: 2rem;
   text-align: center;
+  font-size: 2.5rem;
   flex-basis: 60vh; }
   @media only screen and (max-width: 950px) {
     .especializacion p {
@@ -454,7 +455,6 @@ main .form__margin {
 
 .parrafoEnlacesinteres {
   padding: 15px 0;
-  font-size: 2rem;
   text-decoration: underline; }
 
 .linksInteres {
@@ -466,8 +466,8 @@ main .form__margin {
       align-items: center; } }
   .linksInteres .enlacesInteres {
     font-family: "Belgrano", serif;
-    text-decoration: none;
     font-size: 2rem;
+    text-decoration: none;
     color: #d4c0c0;
     padding: 0 20px;
     transition: .5s linear; }
@@ -524,13 +524,8 @@ main .form__margin {
   .serviciosUno p,
   .serviciosDos p {
     border: 5px solid #111010;
-    box-shadow: 0 5px 10px #262729; }
-
-.serviciosUno p {
-  margin: 0 5% 0 5%; }
-  @media only screen and (max-width: 950px) {
-    .serviciosUno p {
-      margin: 0; } }
+    box-shadow: 0 5px 10px #262729;
+    margin: 0 5% 0 5%; }
 
 @media only screen and (max-width: 480px) {
   .serviciosUno {
@@ -559,11 +554,11 @@ main .form__margin {
     .serviciosTres {
       display: flex;
       flex-direction: column;
-      padding: 20px; } }
+      padding: 20px;
+      margin: 0 5% 0 5%; } }
 
 .descripcionServicios {
   padding: 20px;
-  font-size: 2rem;
   text-align: center; }
   @media only screen and (max-width: 950px) {
     .descripcionServicios {
@@ -630,8 +625,7 @@ main .form__margin {
   .pablito .descripcionPablo {
     grid-area: parrafoPablo; }
     .pablito .descripcionPablo .parrafoQuienesSomos {
-      text-align: center;
-      font-size: 2rem; }
+      text-align: center; }
       @media only screen and (max-width: 950px) {
         .pablito .descripcionPablo .parrafoQuienesSomos {
           font-size: 1.7rem;
@@ -686,8 +680,7 @@ main .form__margin {
   .migue .descripcionMigue {
     grid-area: parrafoMigue; }
     .migue .descripcionMigue .parrafoQuienesSomos {
-      text-align: center;
-      font-size: 2rem; }
+      text-align: center; }
       @media only screen and (max-width: 950px) {
         .migue .descripcionMigue .parrafoQuienesSomos {
           font-size: 1.7rem;
