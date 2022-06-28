@@ -22,10 +22,6 @@ header {
   align-items: flex-end; }
   @media only screen and (max-width: 950px) {
     header {
-      flex-direction: column-reverse;
-      align-items: center; } }
-  @media only screen and (max-width: 480px) {
-    header {
       flex-direction: column;
       align-items: center; } }
 
@@ -37,8 +33,7 @@ header {
 @media only screen and (max-width: 480px) {
   .logoEstudio {
     width: 100px;
-    height: 85px;
-    margin: 0 auto; } }
+    height: 85px; } }
 
 .barraDeNavegacion ul li {
   padding: 20px;
@@ -90,12 +85,11 @@ header {
     .linksDerecha {
       flex-direction: column;
       background: rgba(0, 0, 0, 0.852);
-      padding: 40px;
+      padding: 25px;
       height: 100%; } }
 
 .barra {
-  display: none;
-  z-index: 100; }
+  display: none; }
   @media only screen and (max-width: 950px) {
     .barra {
       display: inline-block;
@@ -119,7 +113,7 @@ header {
       font-size: 40px; } }
 
 footer {
-  padding: 15px;
+  padding: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -127,23 +121,31 @@ footer {
   @media only screen and (max-width: 950px) {
     footer {
       flex-direction: column; } }
-  footer div .fraseFooter {
-    font-family: "Lexend Peta", sans-serif;
-    font-size: 1.5rem; }
+  footer .hijoFooterUno {
+    width: 33%; }
+    @media only screen and (max-width: 950px) {
+      footer .hijoFooterUno {
+        width: auto; } }
+    footer .hijoFooterUno .fraseFooter {
+      padding: 10px;
+      font-family: "Lexend Peta", sans-serif;
+      font-size: 1.5rem; }
+      @media only screen and (max-width: 1200px) {
+        footer .hijoFooterUno .fraseFooter {
+          text-align: center; } }
   footer .fa-registered {
     padding: 5px; }
   footer .iframeMapa {
     margin-top: 1rem;
     display: flex;
     justify-content: center;
-    width: 300px;
+    width: 33%;
     height: 225px; }
     @media only screen and (max-width: 950px) {
       footer .iframeMapa {
-        width: 150px;
-        height: 112px;
-        margin: 0 auto !important; } }
+        height: 112px; } }
   footer .datosFooter {
+    width: 33%;
     font-family: "Lexend Peta", sans-serif;
     color: #d4c0c0;
     letter-spacing: -.2rem;
@@ -153,22 +155,33 @@ footer {
     justify-content: flex-end;
     flex-direction: column; }
     footer .datosFooter .listaFooter {
-      list-style: none; }
+      left: 33%;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
       footer .datosFooter .listaFooter .fa-location-dot, footer .datosFooter .listaFooter .fa-phone, footer .datosFooter .listaFooter .fa-envelope {
         margin-right: 20px; }
+      @media only screen and (max-width: 1200px) {
+        footer .datosFooter .listaFooter {
+          align-items: flex-start; } }
+      @media only screen and (max-width: 480px) {
+        footer .datosFooter .listaFooter li {
+          margin: 0 auto; } }
     footer .datosFooter .icons__redes {
       list-style: none;
       display: flex;
-      justify-content: space-around; }
+      justify-content: space-evenly;
+      padding-top: 10px; }
       footer .datosFooter .icons__redes .fa-linkedin, footer .datosFooter .icons__redes .fa-facebook, footer .datosFooter .icons__redes .fa-instagram {
         font-size: 40px;
         color: #b6a2a2; }
   @media only screen and (max-width: 950px) {
-    footer .datosFooter, footer .fraseFooter, footer .linkFooter {
+    footer .datosFooter, footer .fraseFooter {
       padding: 5px;
       font-size: 1.6rem;
-      margin: 0 auto;
-      text-align: center; } }
+      text-align: center;
+      width: auto; } }
 
 h2 {
   font-family: "Lexend Peta", sans-serif;
@@ -257,15 +270,18 @@ main p {
   border-radius: 5px; }
   .parteIndexDos .tituloEstudio {
     text-shadow: 2px 2px #ca4e4e;
-    font-weight: 700; }
-  .parteIndexDos .anim-typewriter {
+    font-weight: 700;
     overflow: hidden;
     white-space: nowrap;
     margin: 0 auto;
     letter-spacing: .15em;
     animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite; }
+    @media only screen and (max-width: 1300px) {
+      .parteIndexDos .tituloEstudio {
+        letter-spacing: 0;
+        font-size: 2.5rem; } }
     @media only screen and (max-width: 950px) {
-      .parteIndexDos .anim-typewriter {
+      .parteIndexDos .tituloEstudio {
         white-space: normal;
         animation: none; } }
 
@@ -332,7 +348,7 @@ main p {
           max-height: 115px; } }
 
 main .form__margin {
-  padding: 10px;
+  padding: 15px;
   display: flex; }
   main .form__margin form {
     margin: 0 auto;
